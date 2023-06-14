@@ -1,0 +1,2832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        SAVOL 	To'g'ri JAVOB	Muqobil JAVOB	Muqobil JAVOB	Muqobil JAVOB
+Html kengaytmali fayllarni dasturga bog'lashda qaysi komponentadan foydalaniladi?	TCppWebBrowser	TPageProducer	TDataSource	TDataTable
+TCppWebBrowser komponentasining qaysi xususiyatiga *.html faylni yo’li ko'rsatiladi?	Navigate	LoadFromFile	WriteFromFile	OpenFile
+O'rnatiluvchi dastur yaratishda foydalaniladigan dastur nomini toping?	InnoSetup Compiler	C++ Builder XE	WinRAR	Notepad
+"Variant tipi qanday o'zgaruvchilarga nisbatan qo'llaniladi?
+    "	Tipi oldindan ma'lum bo'lmagan o'zgaruvchilarga	Satrli o'zgaruvchilarga nisbatan	Sonli o'zgaruvchilarga nisbatan	Fayl tipiga  nisbatan
+Excel dasturi bilan ishlash uchun qaysi sarlavxa faylni dasturga bog'lash kerak?	ComObj.hpp	Classes.hpp	Controls.hpp	Excel.hpp
+C++ Builderda Excel dasturiga bog'lash uchun e'lon qilingan variant tipidagi o'zgaruvchilar xususiyatlarini o'rnatish uchun qaysi buyruqdan foydanalaniladi?	OlePropertySet( )	SetProperties( )	CreateOleObject()	GetProperties()
+C++ Builderda Excel dasturiga murojaat qilish uchun dastlab qaysi buyruqdan foydalaniladi?	CreateOleObject	SetProperties( )	OleProcedure( )	OlePropertyGet()
+C++ Builderda Excel yacheykasiga qiymat berish uchun qaysi buyruqdan foydalaniladi?	Value	Item	Name	Add
+C++ Builderda  Excel yacheykalarini birlashtirish uchun qaysi buyruqdan foydalaniladi?	Merge	Add	Range	Name
+C++ Builderda  Excel yacheykalarini ma'lum bir guruhini belgilash uchun qaysi buyruqdan foydalaniladi?	Range	Add	Merge	Name
+C++ Builderda Excel dasturidagi yecheyka shrift o'lchamini o'zgartirish uchun qaysi buyruqlar ketma-ketligidan foydalaniladi?	Cell.OlePropertyGet("Font").OlePropertySet("size",20)	Cell.OlePropertyGet("Font").OlePropertyGet("size",20)	Cell.OlePropertySet("Font").OlePropertySet("size",20)	Cell.OlePropertySet("Font").OlePropertyGet("size",20)
+C++ Builderda Excel dasturi bilan ishlash uchun kerak bo'ladigan kutbxonalarni ko'rsating.	"<ComObj.hpp>
+<utilcls.h>"	"<ComObj.hpp>
+<excel.h>"	<excel.app>	<properties.hpp>
+C++ Builderda Excel ob'yektini yaratish uchun qanday buyruqdan foydalaniladi?	vVarApp=CreateOleObject("Excel.Application");	VarApp=CreateOleyObjects("Excel.Application");	CreateOleyObjects("Access.Application");	CreateOleObject=vVarApp("Excel.Application");
+C++ Builder orqali Excel dasturi A1:C4 yacheykalar guruhini birlashtirish(объединить) uchun to'g'ri yozilgan buyruqni toping!	"vVarCell=vVarSheet.OlePropertyGet(""Range"",""A1:C4"");
+vVarCell.OleProcedure(""Merge"");"	"vVarSheet=vVarCell.OlePropertyGet(""Range"",""A1:C4"");
+vVarCell.OledProcedure(""Merge"");"	"vVarCell=vVarSheet.OleEventsGet(""Range"",""A1:C4"");
+vVarCell.OleProcedure(""Merge"");"	"vVarPapers=vVarSheet.OlePropertyGet(""Range"",""A1:C4"");
+vVarCell.OleProcedure(""Merge"");"
+C++ Builder orqali Excel dasturi yacheykasi o'lchamlarini berish uchun qanday buyruqdan foydalanamiz?	"vVarCell.OlePropertySet(""RowHeight"", 20);
+vVarCell.OlePropertySet(""ColumnWidth"",10);"	"vVarCell.OlePropertySet(""CellHeight"", 20);
+vVarCell.OlePropertySet(""ColumnWitdh"",10);"	"OleProperty.vVarCell.Set(""RowHeight"", 20);
+OlePropertyvVarCell.Set(""ColumnWidth"",10);"	"vVarCell.OlePropertyFix(""RowsHeight"", 20);
+vVarCell.OlePropertyFix(""ColumnWidths"",10);"
+C++ Builder orqali Excel dasturi yacheykasiga shrift o'rnatish buyrug'i to'g'ri berilgan javobni toping!	OlePropertyGet("Font").OlePropertySet("Name","Arial");	OleProperty.Get("Font")OleProperty.Set("Name","Arial");	OlePropertyGet("Background").OlePropertySet("Name","Arial");	OleProperty.vVarCell.Get("Font").OlePropertySet("Name","Arial");
+C++ Builder orqali Excel dasturi yacheykasi orientatsiyasini o'zgartirish uchun qanday buyruqdan foydalaniladi?	vVarCell.OlePropertySet("Orientation",90);	vVarCell.PropertySet("Orientation",90);	vVarCell.OleProperty("Orientation",90);	vVarCell.PropertySet(Orientation,90);
+C++ Builder orqali Excel dasturi yacheykasi ma'lumotini rangini o'rnatish buyrug'i to'g'ri berilgan javobni toping!	vVarCell.OlePropertyGet("Font").OlePropertySet("Color",clBlue);	vVarCell.OlePropertySet("Font").OlePropertyGet("Color",clBlue);	vVarCell.OlePropertyInsert("Font").OlePropertySet("Color",clBlue);	vVarCell.OlePropertyGet("Font").OlePropertyPrint("Color",clBlue);
+C++ Builder orqali Excel dasturi yacheykasi ma'lumotiga qalin (Полужирный) stilni o'rnatish buyrug'ini toping!	vVarCell.OlePropertyGet("Font").         OlePropertySet("Bold",true);	vVarCell.OlePropertyFix("Font").         OlePropertySet("Bold",true);	vVarSheet.OlePropertySet("Font").         OlePropertySet("Bold",true);	vVarApps.OlePropertyGet("Font").         OlePropertySet("Bold",true);
+C++ Builder orqali Excel dasturi yacheykasiga matn yozish buyrug'ini toping!	OlePropertySet("Value", "Bizning Matn");	OlePropertyGet("Value", "Bizning matn");	OleProperty("Value", "Bizning matn");	OleProperty("Value", "Bizning matn");
+C++ Builderda Label komponentasida matn chiqarish uchun qanday amallar bajariladi?	Label1->Caption = “Matn”;	Edit1-> Text = “Matn”;	Label1->Text = “Matn”;	Edit1-> Caption = “Matn”;
+C++ Builderda Edit1 komponentasida matn chiqarish uchun qanday amallar bajariladi?	Edit1-> Text = “Matn”;	Label1->Caption = “Matn”;	Label1->Text = “Matn”;	Edit1-> Caption = “Matn”;
+C++ Builderda int tipida ‘a=5, b=8, c=a+b; ’ o’zgaruvchilari berilgan, "c" o’zgaruvchini Label1 komponentasida chiqarish uchun qanday amallar bajariladi? 	Label1->Caption=IntToStr(c);	Label1->Caption=c;	Label1->Caption=FloatToStr(c);	Label1->Caption=StrToInt(c);
+C++ Builderda Button1 komponentasini dastur ishchi holatida formada ko’rinmasligi uchun qanday amallarni bajarish kerak? 	Button1->Visible=false;	Button1->Enabled=false;	Button1->Visible=true;	Button1->Enabled=true;
+C++ Builderda joylashgan Edit1 komponentasidagi ma’lumotni Label1 komponentasiga chiqarish uchun qanday amallarni bajarish kerak? 	Label1->Caption=Edit1->Text; 	Edit1->Text=Label1->Caption; 	Label1->Text=Edit1->Caption; 	Edit1->Caption=Label1->Text; 
+C++ Builderda asosiy menyular yaratishga mo’ljallangan komponenta nomini ko’rsating: 	MainMenu	PopupMenu	MenuMain	TMenu
+ C++ Builderda kontekst menyular yaratishga mo’ljallangan komponenta nomini ko’rsating: 	PopupMenu	MainMenu	MenuMain	TMenu
+C++ Builderda Button1 komponentasini bosganda, agar CheckBox1 ob’yekti tanlangan (belgilangan) bo’lsa “Tanlangan” degan yozuvni chiqarish kodini ko’rsating:  	if (CheckBox1->Checked==true)  ShowMessage("Tanlangan");	if (CheckBox1->Checked->false)  ShowMessage("Tanlangan");	if (Button1->Checked==true)  ShowMessage("Tanlangan");	if (CheckBox1->Checked->true)  ShowMessage("Tanlangan");
+C++ Builderda Button1 komponentasini bosganda, agar RadioButton1 ob’yekti tanlangan (belgilangan) bo’lsa “Tanlangan” degan yozuvni chiqarish kodini ko’rsating:  	if (RadioButton1->Checked==true)  ShowMessage("Tanlangan"); 	if (RadioButton1->Checked=true)  ShowMessage("Tanlangan"); 	if (Radio1->Checked==true)  ShowMessage("Tanlangan"); 	if (Radio1->Checked==false)  ShowMessage("Tanlangan"); 
+C++ Builderda 2 sonni ustida arifmetik amallar bajarish uchun ularni formaga qaysi komponenta orqali kiritamiz? 	Edit	Label	Button	BitBtn
+C++ Builderda Edit1 komponentasiga ma’lumot kiritishni taqiqlash uchun qanday amallar bajariladi? 	Edit1->ReadOnly=true;	Edit1->CharCase=ecLowerCase;	Edit1->ReadOnly=false;	Edit1->ReadOnly==true;
+C++ Builderda Edit1 komponentasiga kichik harf registrida ma’lumot kiritish uchun qanday amallar bajariladi? 	Edit1->CharCase=ecLowerCase;	Edit1->CharCase=ecUpperCase;	Edit1->CharCase=ecNormal;	Edit1->CharCase=true;
+C++ Builderda Edit1 komponentasiga katta harf registrida ma’lumot kiritish uchun qanday amallar bajariladi? 	Edit1->CharCase=ecUpperCase;	Edit1->CharCase=ecLowerCase;	Edit1->CharCase=ecNormal;	Edit1->CharCase=true;
+C++ Builderda Edit1 komponentasiga 5 tagacha bo’lgan simvolda ma’lumot kiritish uchun qanday amallar bajariladi? 	Edit1->MaxLength=5;	Edit1->Length=5;	Edit1->Max=5;	Edit1->Min=5;
+C++ Builderda Edit1 komponentasiga kritilayotgan simvollarni barchasini ‘*’ ko’rinishida chiqarish uchun qanday amallar bajariladi? 	Edit1->PasswordChar='*';	Edit1->Password='*';	Edit1->Char='*';	Edit1->PassChar='*';
+C++ Builderda Edit1 komponentasiga kritilayotgan simvollarni barchasini ‘@’ ko’rinishida chiqarish uchun qanday amallar bajariladi? 	Edit1->PasswordChar='@';	Edit1->Password='@';	Edit1->Char='@';	Edit1->PassChar='@';
+C++ Builderda Edit1 komponentasiga kritilayotgan simvollarni barchasini ‘#’ ko’rinishida chiqarish uchun qanday amallar bajariladi? 	Edit1->PasswordChar='#';	Edit1->Password='#';	Edit1->Char='#';	Edit1->PassChar='#';
+C++ Builderda Edit1 komponentasiga kritilayotgan simvollarni barchasini ‘&’ ko’rinishida chiqarish uchun qanday amallar bajariladi? 	Edit1->PasswordChar='&';	Edit1->Password='&';	Edit1->Char='&';	Edit1->PassChar='&';
+C++ Builderda BitBtn1 komponentasiga rasm qo’yishda qaysi hossadan foydalaniladi?	Glyph	Picture	Image	Graph
+C++ Builderda MaskEdit komponentasining qaysi hususiyati orqali maska(qolip) qo'yiladi? 	EditMask 	Text	Mask	CharCase
+C++ Builderda Image komponentasining qaysi hususiyati orqali rasm qo'yiladi? 	Picture	Glyph	Image	Graph
+C++ Builderda Button1 komponentasini bosganda Shape1 komponentasi aylana shaklini olishi uchun qanday amallar bajariladi? 	Shape1->Shape=stCircle;	Shape1->Shape=Circle;	Shape1->Shape==stCircle;	Shape1->Shape==Circle;
+C++ Builderda Button1 komponentasini bosganda Shape1 komponentasi kvadrat shaklini olishi uchun qanday amallar bajariladi? 	Shape1->Shape=stSquare;	Shape1->Shape=stCircle;	Shape1->Shape=stRectangle;	Shape1->Shape=stLine;
+C++ Builderda Label1 komponentasiga joriy vaqtni chiqarish uchun qanday amallar bajariladi? 	Label1->Caption=TimeToStr(Now( ));	Label1->Caption=Time(Now( ));	Label1->Caption=Time( );	Label1->Caption=IntToStr(Now( ));
+C++ Builderda Edit1 komponentasiga joriy vaqtni chiqarish uchun qanday amallar bajariladi? 	Edit1->Text=TimeToStr(Now( ));	Edit1->Text=Time(Now( ));	Edit1->Text=Time( );	Edit1->Text=IntToStr(Now( ));
+C++ Builderda MaskEdit1 komponentasiga joriy vaqtni chiqarish uchun qanday amallar bajariladi? 	MaskEdit1->Text=TimeToStr(Now());	MaskEdit1->Text=Time(Now());	MaskEdit1->Text=Time( );	MaskEdit1->Text=IntToStr(Now());
+C++ Builderda LabeledEdit1 komponentasiga joriy vaqtni chiqarish uchun qanday amallar bajariladi? 	LabeledEdit1->Text=TimeToStr(Now());	LabeledEdit1->Text=Time(Now());	LabeledEdit1->Text=Time( );	LabeledEdit1->Text=IntToStr(Now());
+C++ Builderda Button1 komponentasi chertilganda Edit1 komponentasidagi ma’lumot Label1 komponentasiga o’tishi va Edit1 dagi ma’lumot o’chirilishi uchun qanday amallar bajariladi? 	Label1->Caption=Edit1->Text; Edit1->Text=" ";	Label1->Caption=Edit1->Text;	Edit1->Text=Label1->Caption; Edit1->Text=" ";	Label1->Caption=Edit1->Text; Label1->Text=" ";
+C++ Builderda Button1 komponentasi chertilganda Label1 komponentasidagi ma’lumot Edit1 komponentasiga o’tishi va Label1 dagi ma’lumot o’chirilishi uchun qanday amallar bajariladi? 	Edit1->Text=Label1->Caption; Label1->Caption=" "; 	Edit1->Text=Label1->Caption;	Label1->Caption;=Edit1->Text; Label1->Caption=" "; 	Edit1->Text=Label1->Caption; Text1->Caption=" "; 
+C++ Builderda Button1 komponentasi chertilganda Button2 komponentasi yashirin (ko’rinmas) xolatga o’tishi uchun qanday amallar bajariladi? 	Button2->Visible=false;	Button1->Visible=false;	Button2->Visible=true;	Button1->Visible=true;
+C++ Builderda Button1 komponentasi chertilganda Edit1 komponentasi yashirin (ko’rinmas) xolatga o’tishi uchun qanday amallar bajariladi?  	Edit1->Visible=false;	Edit1->Visible=true;	Edit1->Enabled=false;	Edit1->Enabled=true;
+C++ Builderda Button1 komponentasi chertilganda Label1 komponentasi yashirin (ko’rinmas) xolatga o’tishi uchun qanday amallar bajariladi? 	Label1->Visible=false;	Label1->Visible=true;	Label1->Enabled=false;	Label1->Enabled=true;
+C++ Builderda Button1 komponentasi chertilganda Button1 komponentasi yashirin (ko’rinmas) xolatga o’tishi uchun qanday amallar bajariladi? 	Button1->Visible=false;	Button2->Visible=false;	Button1->Enabled=false;	Button2->Enabled=false;
+C++ Builderda Button1 komponentasi chertilganda Button2 komponentasi noaktiv (ishlamaydigan)  xolatga o’tishi uchun qanday amallar bajariladi? 	Button2->Enabled=false;	Button2->Enabled=true;	Button1->Enabled=false;	Button1->Enabled=true;
+C++ Builderda Button1 komponentasi chertilganda Label1 komponentasi noaktiv (ishlamaydigan)  xolatga o’tishi uchun qanday amallar bajariladi? 	Label1->Enabled=false;	Label1->Enabled=true;	Label1->Visible=false;	Label1->Visible=true;
+C++ Builderda Button1 komponentasi chertilganda Button1 komponentasi noaktiv (ishlamaydigan)  xolatga o’tishi uchun qanday amallar bajariladi?	Button1->Enabled=false;	Button1->Enabled=true;	Button1->Visible=false;	Button1->Visible=true;
+C++ Builderda Button1 komponentasi chertilganda Edit1 komponentasi noaktiv (ishlamaydigan) xolatga o’tishi uchun qanday amallar bajariladi? 	Edit1->Enabled=false;	Edit1->Enabled=true;	Edit1->Visible=false;	Edit1->Visible=true;
+C++ Builderda Button1 komponentasini chertganga formaning kenglik o’lchamini Edit1 komponentasiga kiritilgan qiymatga tenglash uchun qanday dastur yozish kerak?  	Form1->Width=StrToInt(Edit1->Text);	Form1->Width=StrToChar(Edit1->Text);	Form1->Width=IntToStr(Edit1->Text);	Form1->Width=Edit1->Text;
+C++ Builderda Button1 komponentasini chertganga formaning balandlik o’lchamini Edit1 komponentasiga kiritilgan qiymatga tenglash uchun qanday dastur yozish kerak? 	Form1->Height=StrToInt(Edit1->Text);	Form1->Height=StrToChar(Edit1->Text);	Form1->Height=IntToStr(Edit1->Text);	Form1->Height=Edit1->Text;
+C++ Builderda Button1 komponentasini chertganga formaning rangini ko’k rangga o’zgartirish uchun qanday dastur yozish kerak? 	Form1->Color=clBlue;	Form1->Color=Blue;	Form1->FontColor=clBlue;	Form1->Color==clBlue;
+C++ Builderda Button1 komponentasini chertganga formaning sarlovhasiga  (Form1)  Edit1 komponentasiga kiritilgan qiymatni chiqarish uchun qanday dastur yozish kerak?  	Form1->Caption=Edit1->Text;	Form1->Text=Edit1->Text;	Form1->Caption=Edit1->Caption;	Form1->Caption==Edit1->Caption;
+C++ Builderda Formaning “OnCreate” hodisasi qachon ishga tushadi? 	Forma (yaratilganda) ishga tushganda	Forma faol bo’lganda 	Forma bir marta chertilganda	Formaga sichqon ko’rsatkichi olib kelinishi bilan
+C++ Builderda Formaning “OnActivate” hodisasi qachon ishga tushadi?	Forma faol bo’lganda 	Forma (yaratilganda) ishga tushganda	Forma bir marta chertilganda	Forma ikki marta chertilganda
+C++ Builderda Formaning “OnClick” hodisasi qachon ishga tushadi? 	Forma bir marta chertilganda	Forma (yaratilganda) ishga tushganda	Forma ikki marta chertilganda	Forma yopilishidan oldin
+C++ Builderda Formaning “OnClose” hodisasi qachon ishga tushadi? 	Forma yopilishidan oldin	Forma ikki marta chertilganda	Formaga sichqon ko’rsatkichi olib kelinishi bilan	Forma faol bo’lganda 
+C++ Builderda Formaning “OnDblClick” hodisasi qachon ishga tushadi? 	Forma ikki marta chertilganda	Forma yopilishidan oldin	Forma bir marta chertilganda	Forma faol bo’lganda 
+C++ Builderda ADOTable komponentasiga bog'langan jadvalning aktiv satridan bitta oldingi satrni aktiv qilish buyrug'i qaysi?	ADOTable1->Prior( );	ADOTable1-> Next( );	ADOTable1->Last( );	ADOTable1->Post( );
+C++ Builderda ADOTable komponentasiga bog'langan jadvalning aktiv satridan bitta keyingi satrni aktiv qilish buyrug'i qaysi?	ADOTable1-> Next( );	ADOTable1->First(  );	ADOTable1->Prior( );	ADOTable1->First(  );
+C++ Builderda ADOTable komponentasiga bog'langan jadvalning birinchi satrini aktiv qilish buyrug'i qaysi?	ADOTable1->First(  );	ADOTable1->Last( );	ADOTable1->Prior( );	ADOTable1->Post( );
+C++ Builderda ADOTable komponentasiga bog'langan jadvalning oxirgi satrini aktiv qilish buyrug'i qaysi?	ADOTable1->Last( );	ADOTable1->First(  );	ADOTable1-> Next( );	ADOTable1->Prior( );
+C++ Builderda ADOTable  komponentasiga bog'langan jadvalga yangi yozuv qo’shish funksiyasini toping? 	ADOTable1->Insert( );	ADOTable1->Last( );	ADOTable1->Post( );	ADOTable1->Edit( );
+C++ Builderda ADOTable  komponentasiga bog'langan jadvalninh aktiv satrini o’chirish funksiyasini toping?	ADOTable1->Delete( );	ADOTable1->Erase( );	ADOTable1->Post( );	ADOTable1->Clean( );
+C++ Builderda ADOTable  komponentasiga bog'langan jadvalning aktiv satrini tahrirlash imkonini beruvchi funksiyani toping? 	ADOTable1->Edit( );	ADOTable1->Insert( );	ADOTable1->Post( );	ADOTable1->Cancel( );
+C++ Builderda ADOTable yordamida jadvaldagi yangi qo’shilgan yoki tahrirlangan yozuvni saqlash imkonini beruvchi funksiyasini toping: 	ADOTable1->Post( );	ADOTable1->Cancel( );	ADOTable1->Edit( );	ADOTable1->Prior( );
+C++ Builderda Button1 komponentasini chertganda formada qizil rangda to’g’ri chiziq hosil qilish uchun bu komponentaga qanday dastur yozish kerak? 	Canvas->Pen->Color=clRed; Canvas->LineTo(150, 120); 	Canvas->LineTo(50, 100)->clRed; 	Canvas->Pen->Color=clRed->LineTo(25, 310); 	Canvas->Pen->Color(25, 310); 
+C++ Builderda Button1 komponentasini chertganda formada 2 qalam o’lchamida, to’rtburchak  hosil qilish uchun bu komponentaga qanday dastur yozish kerak? 	Canvas->Pen->Width = 2; Canvas->Rectangle(250,50,400,150);	Canvas->LineTo(50, 100)->Width=5;	Canvas->Rectangle(130, 80)->Width=5;	Canvas->Rectangle(50,20,100,250);
+C++ Builderda Button1 komponentasini chertganda formada ko’k rangda ellips shaklini hosil qilish uchun bu komponentaga qanday dastur yozish kerak?  	Canvas->Pen->Color= clBlue; Canvas->Ellipse(200,200,300,300);	Canvas->Ellipse(200,200,300,300);	Canvas->Pen->Color= clBlue; Canvas->Arc(60,80,110,210);	Canvas->Color= clBlue; Canvas->Elipse(90,50,130,120);
+C++ Builderda Button1 komponentasini chertganda yashil rangga bo'yalgan kvadrat shaklini hosil qilish uchun bu komponentaga qanday dastur yozish kerak? 	Canvas->Brush->Color = clGreen; Canvas->Rectangle(50,50,100,100);	Canvas->Brush->Color = clGreen; Canvas->Square(20,20,70,700);	Canvas->Color = clGreen; Canvas->Rectangle(20,90,120,60);	Canvas->Brush->Color = clGreen; Canvas->Square(20,70);
+C++ Builderda formaning holatini yuqoridan qilib joylash uchun qanday amallarni bajarish kerak? 	Form1->Align=alTop;	Form1->Align=alBottom; 	Form1->Align=alClient;	Form1->Align=alRight; 
+C++ Builderda formaning holatini pastdan qilib joylash uchun qanday amallarni bajarish kerak? 	Form1->Align=alBottom; 	Form1->Align=alTop;	Form1->Align=alClient;	Form1->Align=alRight; 
+C++ Builderda formaning holatini o’ng tomondan qilib joylash uchun qanday amallarni bajarish kerak? 	Form1->Align=alRight; 	Form1->Align=alLeft; 	Form1->Align=alTop;	Form1->Align=alClient;
+C++ Builderda formaning holatini chap tomondan qilib joylash uchun qanday amallarni bajarish kerak?	Form1->Align=alLeft; 	Form1->Align=alTop;	Form1->Align=alRight; 	Form1->Align=alClient;
+C++ Builderda formaning holatini to’liq oynada chiqishi uchun qanday amallarni bajarish kerak? 	Form1->Align=alClient;	Form1->Align=alTop;	Form1->Align=alRight; 	Form1->Align->alClient;
+C++ Builderda formaning AlphaBlend hususiyatinng AlphaBlendValue qiymatinig maksimal chegarasini ko’rsating.	255	100	1000	520
+ADOTable orqali ustunga murojaat qilish qaysi buyruq orqali amalga oshiriladi	FieldByName	FieldByResource	FieldByColumn	FieldByTag
+ Edit komponentasini nomi qaysi hususiyati orqali o’zgartiriladi?	Name	Caption	text	Lines
+Edit komponentasiga kiritilgan yozuvni qaysi hususiyat orqali o’zgartiriladi?	Text	Caption	Name	Lines
+C++ Builderda obyektlarni ikki marta chertilganda bajariladigan hodisa qaysi?	OnDblClick	On DbiClick	OnDlbClick	OnKeyPress
+Ma’lumotlar bazasidagi ma’lumotni formada aks ettirib beruvchi komponenta qaysi?	DBGrid	AdoQuery	AdoTable	AdoConnection
+Image komponentasida rasm to'laligicha aks etishi uchun qaysi hususiyatdan foydalaniladi?	Stretch	Picture	FullSize	Crop
+Formaning shaffoflik hususiyati qaysi?	AlphaBlend	Shadow	AlphaShadow   	Align
+Form1 doimo ekranning markazida chiqishi uchun  qanday kodlashtirish amalga oshiriladi?	Form1->Position= poDesktopCenter 	Position-> poDesigned	Form1->Position== poDesktopCenter 	Form1->Position== poCenter 
+Forma ishga tushganda Button bilan SpeedButton ni farqlaridan birini keltiring?	SpeedButton fokus olmaydi	Hech qanday farqi yo’q	SpeedButtonni Color hususiyati bo’lmaydi	Button fokus olmaydi
+Form2 oynasi aktiv turgan holatda Form1 oynasini berkitish uchun Button1ga qanday kod yoziladi?	Form1->Close();	Form1->Cancel();	Form1->Show();	Form1->ShowMessage(); 
+Dastlabki hosil qilingan Formaning nomini qanday o’zgartirish mumkin?	Form1->Name=”….”	Form1->Caption=”…..”;	Form->Canvas->Caption=’’…..’’	Form1->Canvas->Name=”…..”;
+" ""ComboBox1->Sorted=true"";
+Ushbu kod qanday amal bajarilishini ta’minlab beradi?"	Ro‘yxat elementlarining alifbo bo'yicha tartiblatdi	Ro‘yxat elementlarining raqamlaydi	Ro‘yxat elementlarining unli harflar tartibida  ajratilishini ta’minlaydi    	Sorted amali mantiqiy qiymat qabul qilmaydi
+"cell=sheet.OlePropertyGet(""Cells"").OlePropertyGet(""Item"",2,6);
+cell.OlePropertySet(""Value"", “salom”);
+ Ushbu Excellga yuklash kodi parchasi qanday  vazifa bajaradi?
+"	salom degan so’zni  2-qator 6 – ustunda chiqaradi	Bazadan olingan ma’lumotni 6-qator 2 – ustunda chiqaradi	Salom degan so’zni  6-qator 2 – ustunda chiqaradi 	Excellda hech nima aks etmaydi
+ADOTable komponentasida ihtiyoriy berilgan ma'lumotlar bazasidagi jadvaldan Guruhi ustunidan faqat “650-19” so’zini qidiruvchi kodni yozing?	"ADOTable1->Filtered=false; ADOTable1->Filter=""Guruhi=’""+650-19+""’"";
+ ADOTable1->Filtered=true;                                       
+"	ADOTable1->Filtered=false; ADOTable1->Filter="Guruhi like %"+650-19+"%";ADOTable1->Filtered=true;	"ADOTable1->Filtered=false; ADOTable1->Filter=""Guruhi like ""+650-19+""%"";
+ ADOTable1->Filtered=true;                                       
+"	"ADOTable1->Filtered=false; ADOTable1->Filter=Guruhi=650-19;
+ ADOTable1->Filtered=true;
+"
+Ihtiyoriy berilgan MB dagi jadvaldan Guruhi ustunidan faqat “650-” bilan boshlanuvchi so’zini qidiruvchi kodni yozing?	ADOTable1->Filtered=false; ADOTable1->Filter="Guruhi like '650-%' ";ADOTable1->Filtered=true;	"ADOTable1->Filtered=false; ADOTable1->Filter=""Guruhi=’650-17'"";
+ ADOTable1->Filtered=true;                                       
+"	ADOTable1->Filtered=false; ADOTable1->Filter="Guruhi like '%650-%'"; ADOTable1->Filtered=true;	ADOTable1->Filtered=false; ADOTable1->Filter="Guruhi like '%650'"; ADOTable1->Filtered=true;
+Ihtiyoriy berilgan MB dagi jadvaldan Guruhi ustunidan faqat “650” bilan tugovchi  so’zini qidiruvchi kodni yozing?	ADOTable1->Filtered=false; ADOTable1->Filter="Guruhi like '%650'"; ADOTable1->Filtered=true;	"ADOTable1->Filtered=false; ADOTable1->Filter=""Guruhi=’650-17'"";
+ ADOTable1->Filtered=true;                                       
+"	ADOTable1->Filtered=false; ADOTable1->Filter="Guruhi like '%650-%'"; ADOTable1->Filtered=true;	ADOTable1->Filtered=false; ADOTable1->Filter="Guruhi like '650-%' ";ADOTable1->Filtered=true;
+ MessageDLG() qiymatini o’zlashtirish uchun qaysi tipdan foydalaniladi?	int	string	bool	Qiymatini o’zlashtirish mumkin emas
+MediaPlayerni ishga tushirish uchun qanday kod kiritish kerak?	 MediaPlayer1->Open(); MediaPlayer1->Play();                                      	MediaPlayer1->Open();MediaPlayer1->Close();	MediaPlayer1->Play();MediaPlayer1->Next();	MediaPlayer1->Close();MediaPlayer1->Next();
+Qaysi  komponenta ma'lumotlar omboridagi jadvalni C++ Builder dasturi bilan bog'laydi?	TADOTable	TADOConnection	TDBGrid	TADODataSet
+Qaysi komponenta ma'lumotlar omborini C++ Builder dasturi bilan bog'laydi?	TADOConnection	TADOQuery	TADOTeble	TADODataSet
+Ma'lumotlar omboridaga yozuvlarni kiritish, taxrirlash va o'chirishni taminlaydigan komponentani ko'sating?	TDBNavigator	TADOImage	TDBGrid	TDataSource
+Ma'lumotlar omboridagi ma'lumotlarni jadval ko'rinishida gavdalantiradigan komponentani ko'rsating?	TDBGrid	TADOTeble	TADOConnection	TADODataSet
+TADOTable ga Talaba jadvali  bog'langan. Shu jadvalga ma'lumot qo'shish uchun qaysi buyrug'dan foydaniladi? 	Insert()	Cancel()	Edit()	Delete()
+TADOTable ga Talaba jadvali  bog'langan. Shu jadvalga ma'lumotlarni taxrirlash uchun qaysi buyrug'dan foydaniladi? 	Edit()	Delete()	Cancel()	Insert()
+TADOTable ga Talaba jadvali  bog'langan. Shu jadvalga ma'lumotlarni o'chirish  uchun qaysi buyrug'dan foydaniladi? 	Delete()	Cancel()	Insert()	Edit()
+TADOTable ga Talaba jadvali  bog'langan. Shu jadvalning eng birinchi ma'lumotiga o'tish  uchun qaysi buyrug'dan foydaniladi? 	First()	Last()	Prior()	Next()
+TADOTable ga Talaba jadvali  bog'langan. Shu jadvalning eng oxirgi ma'lumotiga o'tish  uchun qaysi buyrug'dan foydaniladi? 	Last()	First()	Prior()	Next()
+"C++ Builder 6 muhitida formaning AutoSize
+ hususiyati qanday qiymat qabul qiladi."	true va false	0 dan 255 gacha	umuman qiymat olmaydi	ekranning holatiga qarab qiymat qabul qiladi
+"C++ Builder 6 muhitida formaning AutoScroll
+ hususiyati qanday qiymat qabul qiladi."	true va false	0 dan 255 gacha	umuman qiymat olmaydi	ekranning holatiga qarab qiymat qabul qiladi
+"C++ Builder 6 muhitida formaning BorderStyle
+ hususiyatining vazifasi qanday"	Chegara turini belgilaydi.	Formada ob’yektning qanday o’zgarishini bildiradi. 	Dastur boshlanganda formada qanday boshqaruv ta'kidlanganligini aniqlaydi	Asosiy hususiyatlarni hisobga olib ob’yektlarning hatti harakatini o’zgartiradi
+"Formaning Position
+hususiyatini vazifasi qanday?"	Forma uchun - ekrandagi manzil	Ob’yektni yo’naltirish	Ob'yektning turi (turi). Turli xil komponentlar uchun turli qiymatlarni qabul qilish mumkin	Asosiy ma'lumotlarni saqlaydigan obyektlar ro'yxati
+"C++ Builderda OnKeyUp
+ hodisasi qachon ishga tushadi?"	Klаviаturа tugmаsi qo’yib yubоrilgаndа	Sichqоnchа surilgаndа	Sichqоnchа tugmаsi bоsib turilgаndа 	Klаviаturа tugmаsi bosilgan paytda
+"C++ Builderda OnMouseDown
+ hodisasi qachon ishga tushadi?"	Sichqоnchа tugmаsi bоsib turilgаndа 	Sichqоnchа tugmаsi qo’yib yubоrilgаndа	Sichqоnchа surilgаndа	Klаviаturа tugmаsi qo’yib yubоrilgаndа
+"C++ Builderda OnMouseUp
+ hodisasi qachon ishga tushadi?"	Sichqоnchа tugmаsi qo’yib yubоrilgаndа	Sichqоnchа tugmаsi bоsib turilgаndа 	Sichqоnchа surilgаndа	Klаviаturа tugmаsi qo’yib yubоrilgаndа
+"C++ Builderda OnMouseMove
+ hodisasi qachon ishga tushadi?"	Sichqоnchа surilgаndа	Sichqоnchа tugmаsi qo’yib yubоrilgаndа	Sichqоnchа tugmаsi bоsib turilgаndа 	Klаviаturа tugmаsi qo’yib yubоrilgаndа
+Formaning AlphaBlend xususiyati qanday qiymat qabul qiladi?	mantiqiy	xaqiqiy	satrli	bunday xususiyat yo'q
+Formaning AlphaBlendValue xususiyati qanday qiymat qabul qiladi.	butun	xaqiqiy	satrli	mantiqiy
+Xodisa bu ?	obyekt yordamida biron bir jarayon bajarishdan iborat.	obyekt yordamida biron bir funksiyani yaratishdan iborat	obyekt yordamida biron bir tip yaratishdan iborat	obyekt yordamida biron bir o'zgaruvch yaratishdan iborat
+Obyektga yo'naltrilgan dasturlash tillarida xodisalarni ajratib olish uchun qanday so'zdan foydalaniladi?	On	All	win	list
+C++ Builder komponentalari to'g'ri keltirilgan javobni toping?	MineMenu, PopupMenu, Button, CheckBox, RadioButton	Events, Properties, MineMenu, PopupMenu, Button	Object Inspector, Events, Properties, MineMenu	MineMenu, PopupMenu, Button, Properties, RadioButton
+C++ Builder 6 da Events bo'limi dasturning qaysi tarkibiy qismida joylashgan?	Object Inspektor	Form	Object TreeView 	Structure
+Events - … hisoblanadi.	hodisa 	hususiyat	takrorlash	uslub
+Properties - hisoblanadi.	hususiyat	hodisa	tekshirish	uslub
+Button komponentasining OnClick xodisasi qachon ishga tushadi?	tugma bosilganda 	tugmani ustiga sichqonch borganda	tugma ikki marta bosilganda	unday hodisa mavjud emas.
+Ilovaga yangi forma qanday qoshiladi?	File->New->Form	Edit->New->Form	File->Open->Form	File->New->Frame
+Bir formadan ikkinchisiga o'tish uchun qanday metodan foydalanamiz	Show, ShowModal	Model	ShowOne, ShowAll	ShowSlayd, ShowModel
+Show, ShowModal metodlari bajarildanda formaning qaysi hodisasi bajariladi?	OnShow	OnClose	OnDblClick	OnClick
+Formani qanday metod orqali yopish mumkin?	Close	Show	ShowModal	ShowOne
+BorderIcons xususiyatiga tegishli bo'gan kattaliklarni ko'rsating.	biSystemMenu, biMinimize, biMaximize, biHelp.	biSystem, biMenu	OnDbiClick, biSystem, biMinimize	biMinimize, wsMinimized
+WindowState hususiyatiga tegishli bolgan kataliklarni aniqlang	wsMaximized, wsMinimized, wsNormal 	wsNormal, biSystemMenu, biMaximize	biMinimize, wsNormal	wsMaximized, wsMinimized, biMaximize
+Formaning hususiyatlarni korsating	OnActivate, OnClose, OnCreate, OnResize, OnCloseQuery	OnCloseQuery, AlphaBlend	OnActivate, OnClose, AlphaBlend	AlphaBlend, Caption
+object->Items->Add("Salom"); object obyekti qaysi tipda elon qilinga bo'lishi mumkin	TListBox, TComboBox	TListBox, TMemo	TMemo, TComboBox	TMemo, TRichEdit
+object->Lines->Add("Salom"); object obyekti qaysi komponenta bo'lishi mumkin?	TMemo, TRichEdit	TListBox, TMemo	TMemo, TComboBox	TMemo, TComboBox
+"object1->Lines->Add(""Salom""); 
+object2->Items->Add(""Salom""); object1 va object2  obyektlari mos ravishda qaysi komponentalar bo'lishi mumkin?"	TMemo, TCheckListBox	TListBox, TRichEdit	TListBox, TComboBox	TMemo, TRichEdit
+"object1->Items->Add(""Salom""); 
+object2->Lines->Add(""Salom""); object1 va object2  obyektlari mos ravishda qaysi komponentalar bo'lishi mumkin?"	TListBox, TRichEdit	TMemo, TCheckListBox	TListBox, TComboBox	TMemo, TRichEdit
+TLabel komponentasining ustiga sichqoncha ko'rsatgichi borgandagi hodisani ko'rsating	OnMouseMove	OnMouseLeave	OnMouseUp	OnMouseDown
+C++ Builderda formaning AlphaBlend hususiyatinng AlphaBlendValue qiymatinig maksimal chegarasini ko’rsating.	255	100	1000	520
+C++ Builderda formaning AlphaBlend hususiyatinng AlphaBlendValue qiymatinig minimal chegarasini ko’rsating.	0	-255	1000	520
+"Edit komponentasiga 4 kiritilsa Label komponentasida qanday qiymat aks etadi?
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int n;
+n=StrToFloat(Edit1->Text);
+switch (n)
+{
+case 1: Label3->Caption=(""Dushanba""); break;
+case 2: Label3->Caption=(""Seshanba""); break;
+case 3: Label3->Caption=(""Chorshanba""); break;
+default: Label3->Caption=(""Bunday hafta kuni yo'q"");
+}"	Bunday hafta kuni yo'q	Dushanba	Seshanba	Chorshanba
+"Dastur bajarilganda qanday natija beradi?
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int i;
+for(i=1; i<=10; i++)
+Memo1->Lines->Add(i);
+}"	Memo komponentasiga 1 dan 10 gacha bo'lgan sonlarni chiqaradi	Memo komponentasiga 1 dan 9 gacha bo'lgan sonlarni chiqaradi	Button komponentasiga 1 dan 10 gacha bo'lgan sonlarni chiqaradi	Formaga 1 dan 9 gacha bo'lgan sonlarni chiqaradi
+Button komponentasi chertilganda n gacha sonlar yig'indisini topuvchi dastur qaysi javobda berilgan?	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int s,n,i;
+n=StrToFloat(Edit1->Text);
+s=0;
+for (i=1; i<=n; i++)
+s=s+i;
+Label2->Caption=(s);
+}"	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int s,n,i;
+n=StrToFloat(Edit1->Text);
+s=0;
+for (i=1; i<=n; i--)
+s=s+i;
+Label2->Caption=(s);
+}"	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int s,n,i;
+n=StrToFloat(Edit1->Text);
+s=0;
+for (i=1; i<n; i++)
+s=s+i;
+Label2->Caption=(s);
+}"	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int s,n,i;
+n=StrToFloat(Edit1->Text);
+s=1;
+for (i=1; i<=n; i++)
+s=s+i;
+Label2->Caption=(s);
+}"
+n sonini m soniga bo'lib, qoldiqni aniqlovchi dasturni toping?	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int a,n,m;
+n=StrToFloat(Edit1->Text);
+m=StrToFloat(Edit2->Text);
+a=n%m;
+Edit3->Text=FloatToStr(a);
+}"	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int a,n,m;
+n=StrToFloat(Edit1->Text);
+m=StrToFloat(Edit2->Text);
+a=n/m;
+Edit3->Text=FloatToStr(a);
+}"	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int a,n,m;
+n=StrToFloat(Edit1->Text);
+m=StrToFloat(Edit2->Text);
+a=n*m;
+Edit3->Text=FloatToStr(a);
+}"	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int a,n,m;
+n=StrToFloat(Edit1->Text);
+m=StrToFloat(Edit2->Text);
+a=n-m;
+Edit3->Text=FloatToStr(a);
+}"
+n sonini m soniga bo'lib, butun qismini aniqlovchi dasturni toping?	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int a,n,m;
+n=StrToFloat(Edit1->Text);
+m=StrToFloat(Edit2->Text);
+a=n/m;
+Edit3->Text=FloatToStr(a);
+}"	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int a,n,m;
+n=StrToFloat(Edit1->Text);
+m=StrToFloat(Edit2->Text);
+a=n^m;
+Edit3->Text=FloatToStr(a);
+}"	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int a,n,m;
+n=StrToFloat(Edit1->Text);
+m=StrToFloat(Edit2->Text);
+a=n%m;
+Edit3->Text=FloatToStr(a);
+}"	"void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int a,n,m;
+n=StrToFloat(Edit1->Text);
+m=StrToFloat(Edit2->Text);
+a=n-m;
+Edit3->Text=FloatToStr(a);
+}"
+"Quyidagi dastur qaysi algoritmning yechimi bo'la oladi?
+#include <math.h>
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int n,i,f;
+{
+n=StrToInt(Edit1->Text);
+f=0;
+for (i=1; i<n; i++)
+f=f+sqrt(i);
+Edit2->Text:=IntToStr(f);
+}
+}"	1dan 20 gacha natural sonlar kvadrat ildizlari yig’indisini	-1 dan 20 gacha natural sonlar kvadrat ildizlari yig’indisini	1dan 20 gacha natural sonlar kvadratlari yig’indisini	1dan 20 gacha natural sonlar yig’indisini
+"Quyidagi dastur qaysi algoritmning yechimi bo'la oladi?
+#include <math.h>
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+int n,i,f;
+{
+n=StrToInt(Edit1->Text);
+f=1;
+for (i=1; i<n; i++)
+f=f*sqrt(i);
+Edit2->Text:=IntToStr(f);
+}
+}"	1dan 20 gacha natural sonlar kvadrat ildizlari ko'paytmasi	-1 dan 20 gacha natural sonlar kvadrat ildizlari yig’indisini	1dan 20 gacha natural sonlar kvadratlari yig’indisini	1dan 20 gacha natural sonlar yig’indisini
+Formaning AlphaBlendValue xususiyati qanday qiymat oralig'ini qabul qiladi?	0 dan 255 gacha	A-a dan Z-z gacha	0 dan 256 gacha	1 dan 256 gacha
+C++ Builderda Button1 komponentasini chertganda qizil rangda to’g’ri chiziq hosil qilish uchun bu komponentaga qanday dastur yozish kerak? 	Canvas->Pen->Color=clRed; Canvas->LineTo(150, 120); 	Canvas->LineTo(50, 100)->clRed; 	Canvas->Pen->Color=clRed->LineTo(25, 310); 	Canvas->Pen->Color(25, 310); 
+C++ Builderda Button1 komponentasini chertganda 2 qalam o’lchamida, to’rtburchak  hosil qilish uchun bu komponentaga qanday dastur yozish kerak? 	Canvas->Pen->Width = 5; Canvas->Rectangle(250,50,400,150);	Canvas->LineTo(50, 100)->Width=5;	Canvas->Rectangle(130, 80)->Width=5;	Canvas->Rectangle(50,20,100,250);
+C++ Builderda Button1 komponentasini chertganda ko’k rangda ellips shaklini hosil qilish uchun bu komponentaga qanday dastur yozish kerak?  	Canvas->Pen->Color= clBlue; Canvas->Ellipse(200,200,300,300);	Canvas->Ellipse(200,200,300,300);	Canvas->Pen->Color= clBlue; Canvas->Arc(60,80,110,210);	Canvas->Color= clBlue; Canvas->Elipse(90,50,130,120);
+C++ Builderda Button1 komponentasini chertganda yashil rangga bo'yalgan kvadrat shaklini hosil qilish uchun bu komponentaga qanday dastur yozish kerak? 	Canvas->Brush->Color = clGreen; Canvas->Rectangle(50,50,100,100);	Canvas->Brush->Color = clGreen; Canvas->Square(20,20,70,700);	Canvas->Color = clGreen; Canvas->Rectangle(20,90,120,60);	Canvas->Brush->Color = clGreen; Canvas->Square(20,70);
+"int main(){
+int a = 11, b = 6;
+bool OK = a < 7 || b > 10;
+cout << OK;
+return 0; }
+ Ushbu dastur natijasini toping?"	0	1	6	11
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,c;
+    a=5;
+    c=a/4;
+    switch ( c ) {
+        case 1:
+        case 3: cout << ""Ishladi""; break;
+        case 5: cout << ""Dastur""; break;
+        default: cout << ""Talaba""; }
+return 0; }"	Ishladi	Dastur	Talaba	Ekranga xech narsa chiqmaydi
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int q=0;
+    string s=""murakkab dastur"";
+    if (s[0]=='m')
+    {
+        q=q++;
+    }
+        cout << q++;
+return 0;
+}"	0	1	2	3
+"Dastur natijasi qanday bo'ladi?
+int main()
+{
+   double a,b,c,d;
+   a=3;
+   b=2;
+   c=4;
+   d=b/c*sqrt(c)/pow(a,b);
+   swap(a,d);
+   cout << d << endl;
+    return 0;
+}"	3	2	4	0
+“#” bu belgining C++ dagi nomi nima?	funta	mantiqiy va	direktiva	panjara
+<index> -bu? 	massiv xadining joylashgan o’rnini anglatuvchi taktik qiymat	massivlar qitymati xadining matematik qiymati	o’zgaruvchiga  yozilgan tartib xadi 	chekli qiymatlarning tartiblangan to’plamidir
+"a=7, b=14 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    s = 0;
+    while (a >= b)
+    {
+        s++;
+        a -= b;
+    }
+    s += a;
+    cout << s << endl;"	7	21	25	28
+"a=12, b=18 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    s = a * b;
+    while (a != b)
+    if (a > b) a -= b;
+        else   b -= a;
+    s /= a;
+    cout << a << endl;"	6	10	20	100
+"a=28, b=25 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = b;
+    while (i <= a)
+    {
+        s += 1;
+        i++;
+    }
+    cout << s << endl;"	4	6	53	5
+"a=18, b=6 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = b;
+    while (i <= a)
+    {
+        s += i;
+        i++;
+    }
+    cout << s << endl;"	156	51	11	66
+"a=30, b=10 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    s = a * b;
+    while (a != b)
+    if (a > b) a -= b;
+        else   b -= a;
+    s /= a;
+    cout << s << endl;"	30	60	20	50
+"a=13, b=8 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = 0;
+    while (i <= a)
+    {
+        if (i % b == 0) s += i;
+        i++;
+    }
+    cout << s << endl;"	8	0	3	4
+"a=17, b=15 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = 0;
+    do
+    {
+        i++;
+        if (i % b == 0) s += i;
+    } while ( i < a );
+    cout << s << endl;"	15	5	32	33
+Belgili tipni qabul qiluvchi o’zgaruvchilarni e’lon qilish uchun qaysi xizmatchi so’zidan foydalanish mumkin?	char	void	bool	int
+Bevosita rekursiv funksiya nima ish bajaradi?	o’ziga -o’zi murojat qiladi	o’zidan keyingisiga murojat qiladi	ish bajarmaydi	bir xil nomli boshqa funksiyaga  murojat qiladi
+Bir xil toifali, chekli qiymatlarning tartiblangan to’plamiga nima deb ataladi?	massiv	oqim	funksiya	rekursiv funksiya 
+"Bu dasturda necha marta massiv elementi kiritiladi?
+int n=4;
+int a[n];
+for (int i=0;i<=n;i++)
+{cin>>a[i];}"	5	4	3	2
+C++ dasturlash tilida funksiyalar o’z –o’zini chaqirish imkoniyatiga qaysi funksiyada ega bo’ladi?	rekursiv	getline	insert	return 
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,b,c;
+    double d;
+    a=0;    b=2;    c=1;
+    d=(a+b)/c+pow(b,a)/b;
+    cout << d << endl;
+    return 0;
+}"	2,5	2	0	1
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,b,c;
+    double d;
+    a=0;    b=2;    c=1;
+    d=pow(a+(b+2*c)/2,2)/(a+2*b);
+    cout << d << endl;
+    return 0;
+}"	1	0	2	3
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,b,c;
+    a=18;     b=25;     c=27;
+    bool e = a>=b && c!=b || a<=c;
+    cout << e << endl;
+return 0;
+}"	1	-1	0	2
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,b,c;
+    a=32;     b=50;     c=60;
+    bool e= a>=b && c<=b;
+    cout << a+e << endl;
+    return 0;
+}"	32	50	1	0
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,b,c;
+    a=3;     b=4;     c=8;
+    bool e= a<=b && c>=b;
+    if (e){
+        if (e%11==0) {
+            if (a==3) {
+                cout << ""C++"";  }
+            cout << ""Dasturchi"";  }
+        cout << ""Dasturlash"";   }
+    return 0;  }"	 Dasturlash	 C++	1	0
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,b,c;
+    a=3;     b=4;     c=8;
+    bool e= a>=b && c<=b;
+    if (e) {
+        if (e%11==0) {
+            if (a==3)  {
+                cout << ""C++"";  }
+            cout << ""Dasturchi""; }
+        cout << ""Dasturlash""; }
+    return 0; }"	Ekranga xech narsa chiqmaydi	0	Dasturchi	Dasturlash
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,b,c;
+    a=5;     b=12;     c=b/a;
+    switch (c)
+    {
+        case 1:
+        case 3: cout << ""Ishladi""; break;
+        case 5: cout << ""Dastur""; break;
+        default: cout << ""Talaba"";
+    }
+return 0;   }"	Talaba	Dastur	Ishladi	Ekranga xech narsa chiqmedi
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,b,q=0;
+    a=1.2;     b=2;
+    if (b+a==3)
+    {
+        if (a==2)
+        {
+            q=q++;         }
+        q++;     }
+        cout << q++;
+return 0; }"	1	2	3	0
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a=1500;
+    if (a%2==0) {
+        a=a/100;
+        if (a/3==500){
+            if (a%4==3) {
+                cout << ""Talaba""; }
+            cout << ""Salom"";    }
+        cout << ""Salom Talaba"";  }
+    return 0; } "	Salom Talaba	Talaba	TalabaSalomSalom Talaba	SalomSalom Talaba
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a=10,b=20,c=17;
+    b+=a++;
+    b+=c;
+    cout << b++ << endl;
+return 0; }"	47	1	49	48
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int n(2.8),b=12;
+    cout << b/n;
+return 0;
+}"	6	4	12	Dasturda xatolik bor
+"Dastur natijasini toping.
+int main( ){
+   int a=27,b=17;
+     a=a-b;
+     b=a+b;
+    cout <<b++;
+    return 0; }"	27	8	18	28
+"Dastur natijasini toping?
+int a=7,b=5,c;
+c=a|b;
+cout<<c;"	7	8	5	6
+"Dastur natijasini toping?
+int x=8;
+cout<<x;
+cout<<x++;
+cout<<++x;"	8810	81010	888	8910
+Dasturlash tillarida qiymat qaytarmaydigan funksiyalar nima deyiladi	prodseduralar	reboylerlar	prodmissorlar	prodrayverlar
+Faqat bir qatorni izohga aylantirish uchun qo’llaniladigan belgilar	   //	*/	/*       */	/*
+Faqatgina funksiya tarkibida ishlashi mumkin bo’lgan o’zgaruvchi bu …?	lokal o’zgaruvchi	global o’zgaruvchi	parametrsiz o’zgaruvchi	parametrli funksiya
+"int a=0;
+while(a-1<5)
+{a++;}
+Dastur qismida sikl tanasi necha marta bajariladi?"	6	4	1	5
+"int a=15;
+while(a>0)
+{--a;}
+Dastur qismida sikl tanasi necha marta bajariladi?"	15	14	16	Bajarilmaydi
+"int a=27,b=32,c;
+c=a>b+a-b<a+b;
+cout<<c;
+dastur natija qaanday ?"	1	0	27	32
+"int i=1;
+while(i>-1)
+{cout<< i << endl; i++;}
+Dastur qismida sikl tanasi necha marta bajariladi?"	Cheksiz	Bajarilmaydi	2	1
+"int main ( ){ 
+int  a= 30, b=40,  c;
+c=a..b;
+cout <<c;
+return 0; }
+natijani 30 chiqishi uchun nuqtalar o’rniga qaysi belgi qo’yiladi"	%	&	||	/
+"int main( ){
+ int s = 1, i = 11;
+ while (i<=111) {
+  s += i; i++;   }
+ cout<< s;
+ return 0;  }
+dastur natijasini toping."	6162	5152	5051	7071
+"int main( ){ 
+int a=30, b=40, c=35,d;
+if (a>b) {d=b;}
+else {d=a;}
+if(d>c)d=c;
+cout << d;
+return 0;  }
+Dastur natijasini xisoblang."	30	35	40	5
+"int main( ){
+ int i=100;
+ while (i<=110){
+        i++;  }
+    cout << i;
+ return 0;   }
+dastur natijasi qanday."	111	110	100	1155
+"int main( ){
+int i=1;
+int s=0;
+do
+{ s+=1/i;
+i++;
+} while (i <= 4);
+cout<<s;
+return 0; }
+ dastur natijasini toping. "	1	4	2	3
+"int main( ){
+int a;
+cin>>a;
+cout<<sizeof((double)a);
+return 0; }
+Ekranga qanday natija chiqadi?  (a=118) "	8	4	10	16
+"int main( ){
+int a;
+cout<<""Ok\tOk"";
+    return 0;  }   
+Dastur natijasini toping."	Ok      Ok	OkOk	Ok	Ok\tOk
+Ko’rsatkich bu - … 	kompyuter xotirasi yacheykasining adresi yozilgan o’zgaruvchidir	qiymatsiz o’zgaruvchi 	tip	dasturda mavjud emas
+"n=18 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0, i = 0;
+    cout << ""n=""; cin >> n;
+    while (1 > 0)
+    {
+        i++;
+        s += i;
+        if ( i >= n ) break;     }
+    cout << s << endl;"	171	153	190	18
+"n=27 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    if (n % i == 0)
+        s += i;
+    cout << s << endl;"	40	42	56	18
+"n=33 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int k = 1; k <= n; k++)
+    {
+        if (k % 5 == 0)
+            continue;
+        s += k;
+    }
+    cout << s << endl;"	456	490	423	360
+"n=7 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    int i = 0;
+    do
+    {
+        i++;
+        s += i++;
+    } while ( i < n);
+    cout << s << endl;"	16	9	25	17
+"n=9 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    int i = n;
+    do
+    {
+        s += i--;
+    } while ( i > 0);
+    cout << s << endl;"	45	55	36	37
+"n=133 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    while (!( s * s > n))
+    s++;
+    cout << s << endl;"	12	10	11	13
+"n=11 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    if (i % 3 == 0)
+       s += 2 * i;
+   cout << s << endl;"	36	60	18	20
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    switch ( i % 10 )
+    {
+     case 0:
+     case 2:
+     case 4:
+     case 6:
+     case 8: s += i;
+          break;
+     default : s++;
+    }
+   cout << s << endl;"	35	30	36	40
+"n=12 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 2; i <= n; i++)
+    {
+        bool b = true;
+        for (int j = 2; j < i; j++)
+          if (i % j == 0)
+          {
+              b = false;
+              break;
+          }
+        if ( b ) s += i;
+    }
+    cout << s << endl;"	28	15	27	30
+"n=12 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, k = 1, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    s += k++;
+    k += i++;
+    cout << s << endl;"	78	12	66	91
+"n=12 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    if (i % 5 == 0)
+        break;
+    else
+        s += i;
+   cout << s << endl;"	10	20	30	15
+"n=12 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    switch ( i % 5 ) {
+     case 0: s += i;
+         break;
+     default : s++; }
+   cout << s << endl;"	25	30	20	35
+"n=13 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 1, n;
+    cout << ""n=""; cin >> n;
+    do {
+        i += 2;
+        if (i % 3 == 0)
+            s += i;
+        else
+            s++;
+    } while (i <= n);
+    cout << s << endl;"	31	32	33	30
+"n=15 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        int k = 0;
+        for (int j = 1; j < i; j++)
+        if (i % j == 0) k++;
+        if ( k == 1 ) s += i;
+    }
+    cout << s << endl;"	41	40	42	51
+"n=15 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    if (n % i == 0)
+        s += 1;
+    cout << s << endl;"	4	6	5	3
+"n=3 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 1, a;
+    cout << ""n=""; cin >> n;
+    a = n;
+    for (int k = 1; k <= n; k++)
+    s *= a;
+    cout << s << endl;"	27	9	81	30
+"n=30 bo'lganda dastur qismi qanday natija beradi?
+    int n, q;
+    cout << ""n=""; cin >> n;
+    if (n != 1) q = n / 2;
+        else    q = 1;
+    while (!(q * q <= n))
+    q--;
+    cout << q << endl;"	5	6	30	4
+"n=40 bo'lganda dastur qismi qanday natija beradi?
+    int n, k = 0, s = 1;
+    cout << ""n=""; cin >> n;
+    while (!(s > n))
+    {
+        s *= 3;
+        k++;
+    }
+    cout << k << endl;"	4	10	40	30
+"n=456 bo'lganda dastur qismi qanday natija beradi?
+int funksiya(int n) {
+    int k = 0; 
+    while(n > 0) {
+        k++; 
+        n /= 10; }
+    return k; }
+int main( ) {
+    int n;
+    cout << ""n=""; cin >> n;
+    cout << funksiya(n);
+    return 0; }"	3	456	15	-456
+"n=5 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    s *= i;
+    cout << s << endl;"	0	1	10	-1
+"n=5 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 1, p = 1, n;
+    cout << ""n=""; cin >> n;
+    while (i <= n)
+    {
+          s += i;
+          p *= i;
+          i++;
+    }
+   s += p;
+   cout << s << endl;"	135	26	100	130
+"n=5 bo'lganda dastur qismi qanday natija beradi?
+int funksiya(int n) {
+    while (n > 0)
+    { cout << n % 10;
+        n /= 10;  }
+    return n;
+}
+int main( ) {
+    int n;
+    cout << ""n=""; cin >> n;
+    cout << funksiya(n);
+    return 0;
+} "	50	5	10	15
+"n=6 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 1;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    s *= i;
+    cout << s << endl;"	720	700	24	120
+"n=6 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, k = 1, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++) {
+        k += i;
+        s += k; 
+    }
+   cout << s << endl;"	62	63	60	64
+"n=6 bo'lganda dastur qismi qanday natija beradi?
+int funksiya(int k)
+{
+    if (k == 0)
+        return 1;
+    else
+        if (k == 1)
+            return 1;
+        else
+            return k * funksiya(k - 1);
+}
+int main()
+{
+    int n;
+    cout << ""n=""; cin >> n;
+    cout << funksiya(n) << endl;
+    return 0;
+}"	720	120	24	500
+"n=7 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 1;
+    cout << ""n=""; cin >> n;
+    while (n >= 2){
+          s *= n;
+          n -= 2; }
+    cout << s << endl;"	105	35	100	108
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 0; i <= n; i = i + 2)
+    s += i;
+    cout << s << endl;"	20	10	21	19
+"n=18 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 0; i <= n; i = i + 3)
+    s += i;
+    cout << s << endl;"	63	65	36	20
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    int i = n;
+    while (i > 0)
+    {
+        s += i--;
+        if (i >= n) break;
+    }
+    cout << s << endl;"	36	63	25	30
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 1, i = 2;
+    cout << ""n=""; cin >> n;
+    for (int k = 1; k <= n; k++)
+    s *= i;
+    cout << s << endl;"	256	128	64	100
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 0, n;
+    cout << ""n=""; cin >> n;
+    dastur_uz : i++;
+    s += i;
+    if (i != n)
+       goto dastur_uz;
+    else
+        s *= 1;
+   cout << s << endl;"	55	72	65	10
+"n=2 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 0, n;
+    cout << ""n=""; cin >> n;
+    dastur_uz : i++;
+    s += i;
+    if (i != n)
+       goto dastur_uz;
+    else
+        s *= 4;
+   cout << s << endl;"	12	8	16	18
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+int s = 0, i, n;
+cout << ""n=""; cin >> n;
+for (i = 1; i <= n; i+=2)
+if (i % 3 == 0)
+s += i; s *= 3;
+cout << s << endl;"	36	40	30	6
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    if (i % 2 == 0)
+        s += i; s *= 2;
+    cout << s << endl;"	40	50	30	42
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    if (i % 2 == 0)
+    {
+          s += i; s *= 2;
+    }
+   cout << s << endl;"	104	105	100	108
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    if (i % 2)
+        s += i;
+    else
+        s += 2 * i;
+   cout << s << endl;"	56	65	58	50
+"n=100 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    while (3 <= n)
+    {
+        n /= 6;
+        s++;
+    }
+    cout << s << endl;"	2	10	30	3
+"n=80 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    while (3 <= n)
+    {
+        n /= 3;
+        s++;
+    }
+    cout << s << endl;"	3	10	30	2
+"n=876 bo'lganda dastur qismi qanday natija beradi?
+void funksiya(int *a, int *n, int *k)
+{  *n = 0;
+    *k = 0;
+    while (*a > 0) {
+        *k  += *a % 10;
+        *n += 1;
+        *a /= 10; }
+}
+int main( ){
+    int n, b, c;
+    cout << ""n=""; cin >> n;
+    funksiya(&n, &b, &c);
+    cout << b + c + n;
+    return 0;
+}"	24	23	21	876
+"n=899 bo'lganda dastur qismi qanday natija beradi?
+    int n, s;
+    cout << ""n=""; cin >> n;
+    s = 0;
+    while (n > 0)
+    {
+        s += n % 10;
+        n /= 10;
+    }
+    cout << s << endl;"	26	25	18	3
+"n=9 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 0; i <= n; i++)
+    if (i % 2==1)
+        s += i;
+    cout << s << endl;"	25	35	15	26
+"n=9 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 1, p = 0, k = 5, n;
+    cout << ""n=""; cin >> n;
+    while (i <= n) {
+          if (i % 2 == 0)
+              s += k;
+          else p++;
+          i++; }
+    p += k;
+    s += p;
+   cout << s << endl;"	30	20	40	50
+"n=11 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 1, p = 0, k = 5, n;
+    cout << ""n=""; cin >> n;
+    while (i <= n) {
+          if (i % 2 == 0)
+              s += k;
+          else p++;
+          i++;  }
+    p += k;
+    s += p;
+   cout << s << endl;"	36	20	40	50
+"n=9 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, k = 1, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    k += i;
+    s += k;
+    cout << s << endl;"	46	45	40	47
+O’zgaruvchi psevdonimi nima deb ataladi ?	Xavola 	O’zgarmas	Rekursiya	Ko'rsatkich
+Parametrli sikl operatoridan tog'ri foydalanilgan javobni ko'rsating.	for (int i=0; i<=n; i++)	for (int i=0, i<=n, i++,)	for (int i=0, i<=n; i++)	for (int i=0; i<=n; i++ ;)
+Parametrli sikl operatorini ko'rsating.	for()	do{}while()	while()	if()
+Prefiksli inkrement berilgan qatorni toping?	int f=3; cout<<++f<<endl;	int f=3; cout<<--f<<endl;	int f=3; cout<<f<<endl;	int f=3; cout<<-f<<endl;
+Dasturchi tomonidan dastur elementlari uchun ixtiyoriy tanlangan nom nima deyiladi?	Identufikator	Direktiva	O’zgaruvchi	Operator
+"Quyidagi dastur orqali ekranga qanday ma’lumot chiqadi?
+string h[3]={Bahrom,Ilyos,Sodiq};
+for(int i=0;i<3;i++)
+cout<<h[i];"	dasturda xatolik beradi	Bahrom Ilyos Sodiq    	Bahrom, Ilyos,Sodiq   	3
+"Quyidagi dastur qanday natija chiqaradi?
+int b[6]={1,2,3,4,5,6};
+for (int i=0;i<6;i++)
+{if(b[i]%2==0)
+cout<<b[i]<<"" ""; }"	2 4 6	2 3 4 6        	1 3 5       	1 2 3 4 5 6        
+"Quyidagi dastur qanday natija chiqaradi?
+int b[6]={1,2,3,4,5,6};
+int m=b[0];
+for (int i=0;i<6;i++)
+{ if(b[i]<m)
+m=b[i];}
+cout<<m<<endl;"	1	6	2	3
+"Quyidagi massivda nechta element qatnashgan
+int k[3][4];"	12 ta         	3 ta    	4 ta 	34 ta
+Quyidagi sikl operatori 10 martta bajarilishi uchun n ning qiymati qanday bo'lishi lozim? for (int i=0; i<n; i++) {sikl tanasi;}	10	9	8	11
+Sanab o’tiluvchi o’zgarmaslar qanday kalit so’zi bilan aniqlanadi?	enum	signed	auto	sizeof
+Shart operatori tarkibida qaysi operatordan foydalanish mumkun?	 ixtiyoriy	while	sikl	for
+Shart operatorini necha xil ko’rinishi mavjud ?	2	1	3	4
+Sharti keyin berilgan sikl operatori tuzilishini ko'rsating.	do{sikl tanasi;} while(shart)	while(shart) {sikl tanasi;}	while(sikl tanasi) {shart;}	do{shart} while(sikl tanasi;)
+Sharti keyin berilgan sikl operatorini ko'rsating.	do{}while()	for()	while()	if()
+Sharti keyin berilgan takrorlanish operatorini toping	 do..while	for..while	if.. Else	 to’g’ri javob yo’q
+Sharti oldin berilgan sikl operatori tuzilishini ko'rsating.	while(shart) {sikl tanasi;}	do{sikl tanasi;} while(shart)	do{shart} while(sikl tanasi;)	while(sikl tanasi) {shart;}
+Sharti oldin berilgan sikl operatorini ko'rsating.	while()	do{}while()	if()	for()
+Sikl operatorining qaysi turida sikl tanasi kamida bir marotaba majburiy tarzda bajariladi?	do{} while()	for()	while()	if()
+Sikl operatorlarini ko’rsating?	 for,do.. while,while	string,while,for	getline ,while	break ,do.. while
+Takrorlash operatorini toping	do..while	if..else	if.. For	if.. While
+"Ushbu dastur natijasini toping
+int main( ){
+int a = 12, b = -21, c = 21;
+bool OK = a > 0 && b > 0 && c > 0;
+cout << OK;
+return 0; }"	0	1	12	-21
+"Ushbu dastur natijasini toping
+int main( ){
+int n = 775, x, y, z;
+x = n / 100;
+y = n / 10 % 10;
+z = n % 10;
+bool OK = x == z;
+cout << OK;
+return 0; }"	0	1	775	577
+"Ushbu dastur natijasini toping
+int main( ){
+int n = 787, x, y, z;
+x = n / 100;
+y = n / 10 % 10;
+z = n % 10;
+bool OK = x == y;
+cout << OK;
+return 0; }"	0	1	787	7
+"Ushbu dastur natijasini toping(a = 12, b =-21, c=21):
+int main( ){
+int a = 12, b = -21, c = 21;
+bool OK = a > 0 || b > 0 || c > 0;
+cout << OK;
+return 0; }"	1	0	12	-21
+"Ushbu dastur natijasini toping(n=751):
+int main( ){
+int n = 751, x, y, z;
+x = n / 100;
+y = n / 10 % 10;
+z = n % 10;
+bool OK = x >= z && y >= z;
+cout << OK;
+return 0; }"	1	0	751	157
+"Ushbu dastur natijasini toping:
+int main(){
+int a = 17, b = 23;
+bool OK = a < 0 ^ b > 0;
+cout << OK;
+return 0; }"	1	0	17	23
+"Ushbu dastur natijasini toping:
+int main( ){
+int a = -17, b = 23;
+bool OK = a < 0 ^ b > 0;
+cout << OK;
+return 0; }"	0	1	-17	23
+"Ushbu dastur natijasini toping:
+int main(){
+int a = 17, b = 23;
+bool OK = a > 0 ^ b > 0;
+cout << OK;
+return 0; }"	0	1	17	23
+"Ushbu dastur natijasini toping:
+int main(){
+int a = 10, b = 28;
+bool OK = a > 0 ^ b > 0;
+cout << OK;
+return 0; }"	0	1	17	23
+"Ushbu dastur natijasini toping:
+int main( ){
+int a = 8, b = -23;
+bool OK = a > 0 ^ b > 0;
+cout << OK;
+return 0; }"	1	0	17	-23
+Variant tanlash operatori qaysi ?	switch	if	else	for
+Xotira ajratish qaysi protsedurani chaqirish orqali amalga oshiriladi?	new	open	protsedure	int
+"Quyidagi dasturda chiqarish oqimidan chiquvchi qiymatni aniqlang: 
+int a=15;
+cout << a; ++a*a--; "	15	31	225	224
+Hisoblash mashinasiga algoritmni beruvchi ko`rsatmalar (buyruqlar)ning ketma-ketligi nima deyladi? 	Dastur 	Amal	Operator	Ifoda 
+Quyidagi funksiya prototipi qanday mantiqiy natija qaytaradi: islower('j') 	TRUE	FALSE	J	‘j’
+"Quyidagi funksiya prototipi qanday natija qaytaradi: 
+char c='E';    char x = tolower(c);   cout << x;"	e	E	101	E'
+"Quyidagi dasturda chiqarish oqimidan chiquvchi qiymatni aniqlang:
+int a=5;  ++a; a++; 
+cout << a; "	7	4	5	8
+"Quyidagi dasturda chiqarish oqimidan chiquvchi qiymatni aniqlang: 
+int a=9;
+cout << a-- + --a ;     "	16	14	15	18
+Qaysi takrorlanish operatori aniq takrorlanishga ega bo’lgan dasturlar uchun mo’ljallangan? 	for   	do .. while  	while   	goto
+"Quyidagi dastur natijasini aniqlang :
+#define amal(x, y) x + y
+int main( ){
+cout<<amal(2*3, 7-1); 
+return 0;}"	12	13	9	23,71
+"Quyidagi dastur natijasini aniqlang :
+#define amal(x) (x) * (x)
+int main( ){
+int a=3; 
+cout<<amal(a++); 
+return 0;}"	12	9	16	20
+Quyidagi funksiya prototipi qanday mantiqiy natija qaytaradi: isalpha('A') 	TRUE	FALSE	‘10’	10
+"Quyidagi funksiya prototipi qanday natija qaytaradi:
+char c='b';  
+char x = toupper(c);
+cout << x;  "	B	‘b’	b	66
+Dаstur ishlаshi dаvomidа o’zgаrmаy qolаdigаn miqdordir nima deyiladi?	O’zgarmas	Algoritm	Identifikator	O’zgaruvchi
+"Quyidagi dasturda chiqarish oqimidan chiquvchi qiymatni aniqlang:
+int a=4;
+cout << a--*a++; "	12	16	9	20
+Bo’lishdagi (butun) qoldiqni aniqlash operatori (%) qaysi arifmetik amalga kiradi? 	Binar 	Unar	Oddiy 	Murakkab
+"Quyidagi dastur natijasini aniqlang : 
+#define amal(x)(x+x*2)
+int main( ){
+cout<<amal(2 * 3);
+return 0;}"	18	24	12	6
+Quyidagi funksiya prototipi qanday mantiqiy natija qaytaradi: isupper(‘v’) 	FALSE 	TRUE	V	‘v’
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Nilufar suvda o'sadi"");
+s.insert(8, ""guli "");  
+cout<<s;"	Nilufar guli suvda o'sadi	guli Nilufar suvda o'sadi	Nilufar gulisuvda	Nilufar suvda o'sadi
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Besh a'lo baxo"");
+s.insert(4, ""bu"");  
+cout<<s;"	Beshbu a'lo baxo	Besh a'lo baxo	Besh baxo	Besh4 a'lo baxo
+"Quyidagi dastur natijasida ekranga nima chiqadi? 
+string s(""Birdan ikki keladi"");
+s.insert(7, ""keyin"");  
+cout<<s;"	Birdan keyinikki keladi	Birdan keladi keyin	Birdan keyin ikki 	Birdan keyin
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Bahor qish"");
+s.insert(5, ""dan keyin "", 11, ""keladi"");  
+cout<<s;"	Kompilyatsida xatolik sodir bo’ladi	Bahor qishdan keyinkeladi	Bahor qishdan keyin	Bahor qishdan  keladi
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Nilufar guli suvda o'sadi"");
+s.erase(8,11);      
+cout<<s;"	Nilufar o'sadi	Nilufar guli suvda o'sadi	Nilufar suvda o'sadi	Nilufar i suvda o'sadi
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Besh bu a'lo baxo"");
+s.erase(8,5);      
+cout<<s;"	Besh bu baxo	Besh baxo	Besh a'lo baxo	Besh bu a'lo baxo
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Birdan keyin ikki keladi"");
+s.erase(0,7);      
+cout<<s;"	keyin ikki keladi	Beyin ikki keladi	keyin ikki 	Birdan keyin ikki 
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Bahor qishdan keyin keladi"");
+s.erase(10,10);      
+cout<<s;"	Bahor qishkeladi	Bahor  keladi	qish keladi	Bahor qishdan keladi
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Nilufar guli suvda o'sadi"");
+s.erase(11);       
+cout<<s;"	Nilufar gul	Nilufar guli 	Nilufar guli suvda 	(Bo’sh ekran chiqadi)
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Besh bu a'lo baxo"");
+s.erase( );       
+cout<<s;"	Bo’sh ekran chiqadi	Besh bu a'l bax	esh bu a'lo baxo	Besh bu a'lo baxo
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Birdan keyin ikki keladi"");
+s.erase(14);       
+cout<<s;"	Birdan keyin i	Birdan keyin ikki 	Birdan keyin	(Bo’sh ekran chiqadi)
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s(""Bahor qishdan keyin keladi"");
+s.erase(25);       
+cout<<s;"	Bahor qishdan keyin kelad	Bahor qishdan keyin keladi	qishdan keyin keladi	(Bo’sh ekran chiqadi)
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s1(""Nilufar guli suvda o'sadi!""), 
+s2(""chiroyli gul?"");
+s1.replace(12, 13, s2, 0, 12);
+cout<<s1;"	Nilufar gulichiroyli gul!	Nilufar guli chiroyli gul?	Nilufar chiroyli gul!	Nilufar guli suvda o'sadi chiroyli gul?
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s1(""Besh bu a'lo baxo!""), 
+s2(""to'rt esa yaxshi."");
+s1.replace(8, 5, s2, 0, 5);
+cout<<s1;"	Besh bu to’rtbaxo!	Besh a’lo to’rt yaxshi!	Besh bu to’rt baxo.	Besh bu a'lo baxo!
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s1(""Birdan keyin ikki keladi!""), 
+s2(""keyin uch keladi."");
+s1.replace(7, 17, s2, 6, 9);
+cout<<s1;"	Birdan uch kelad!	Birdan keyin uch keladi	Birdan keyin ikki keladi keyin uch keladi	Birdan keyin ikki uch!
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string s1(""Bahor qishdan keyin keladi!""), 
+s2(""faslidan."");
+s1.replace(6, 13, s2, 0, 8);
+cout<<s1;"	Bahor faslidan keladi!	Bahor faslida keladi!	Bahor qishdan faslidan!  	Bahor qishdan keyin keladi
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string youth(""Nilufar guli suvda o'sadi!"");
+int qidir = youth.find(""suv"");
+cout<<qidir;"	13	12	14	Nilufar guli suvda o'sadi!
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string youth(""Besh bu a'lo baxo!!"");
+int qidir = youth.find(""!"");
+cout<<qidir;   "	17	16	18	Besh bu a'lo baxo!!
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string youth(""Birdan keyin ikki keladi ikki yomon baho!"");
+int qidir = youth.find(""ikki"");
+cout<<qidir;  "	13	14	25	Birdan keyin ikki keladi ikki yomon baho!
+"Quyidagi dastur natijasida ekranga nima chiqadi?
+string youth(""Bahor qishdan keyin keladi!!"");
+int qidir = youth.find(""kein"");
+cout<<qidir; "	-1	13	14	Bahor qishdan keyin keladi!!
+E’lon qilingan funksiya parametrlar qanday ajratiladi?	vergul (,) bilan	nuqta (.) bilan	ikki nuqta (:) bilan	nuqta vergul (;) bilan
+Qabul qilingan o’zgaruvchi  funksiyada qanday o’zgauvchi vazifasini bajaradi?	lokal o’zgaruvchi	global o’zgaruvchi	register o’zgaruvchi	avto o’zgaruvchi
+Funksiya qiymati qanday qaytariladi?	return orqali	void orqali	return 0; orqali	main( ) orqali
+"Dastur natijasida funksiya nimani qaytaradi?
+void hello( ) { return ""salom"";}"	kompilyatsida xatolik sodir bo’ladi	hello( salom) ni	0 ni	“salom” yozuvini
+"Dastur kompilyatsiya qilinganda so’ng natijani aniqlang:
+#include <iostream> 
+int main( ){
+int i=24;  int *p=&i;
+std::cout<<++*p;
+return 0; }"	25	24	23	0x6bfec8
+"Dastur kompilyatsiya qilinganda so’ng natijani aniqlang: 
+#include <iostream> 
+int main( ){
+int i=14;  int *p=&i;
+std::cout<<*p--;
+return 0; }"	14	13	15	0x6bfec8 
+"Dastur kompilyatsiya qilinganda so’ng natijani aniqlang: 
+#include <iostream> 
+int main( ){
+int i=18;  
+int *p=&i;
+std::cout<<++*p--;
+return 0; }"	19	18	17	Kompilyatsiya jarayonida xatolik sodir bo’ladi
+ Massivni e’lon qilish to’g’ri ko’rsatilgan qatorni toping?	 int a[50]; 	float a=[50];      	int a{50};     	int a[3]={“1,2,3”};
+"Quyidagi ifodadan qanday qiymat chiqishini aniqlang int a[]={1,2,3,4,5};
+cout<<a[3];"	4	3	2	5
+Massivni initsalizatsiyalash to’g’ri ko’rsatilgan javobni toping?	int a[3]={45,12,1};	int a[4]={12,3,4,43,2};	int a[3]={“12,3,4”};	float j[]={‘1,2,3,4,5.5,5.6’};
+Massiv elementiga nima orqali murojaat qilinadi?	indeksi orqali    	funksiya orqali	tipi orqali    	nomi orqali     
+"Dasturning natijasi qanday bo'ladi?
+int main( ){
+    short a,b;
+    double c;
+    a=3;
+    b=2;
+    c=a/b;
+    if (c==1) {
+        cout << ""yakuniy"" << endl;     }
+    else 
+    { cout << ""birinchi"" << endl;     }
+    return 0; }"	yakuniy	 birinchi	dasturda xatolik bor	 1.5
+"Dasturning natijasi qanday bo'ladi?
+int main( ){
+    int a,b;  float c;
+    a=3;  b=2;  c=a/b;
+    switch (c){
+        case 1  : cout << ""C++""; break;
+        case 1.5: cout << ""Dastur""; break;
+        case 2  : cout << ""Tugadi""; break;
+        case 2.5: cout << ""Salom""; break;     }
+    return 0; }"	Dasturda xatolik bor	 C++	Dastur	Tugadi
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a;  a=1500;
+    if (a%2==0) {
+        a=a/100;
+        if (a/3==500)
+        { if (a%4==3)
+            { cout << ""Talaba""; }
+            cout << ""Salom""; }
+        cout << ""Salom Talaba""; }
+    return 0;}"	Salom Talaba	Talaba	TalabaSalomSalom Talaba	SalomSalom Talaba
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+   int a,b,c,d;
+   a=3;   b=2;    c=4;
+   d=a+b/2*c;
+   cout << d << endl;
+    return 0;}"	7	0	3	0,625
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+   int a,b,c;
+   double d;
+   a=3;    b=2;    c=4;
+   d=b/c*sqrt(c)/pow(a,b);
+   cout << d << endl;
+    return 0; } "	0	 2.25	0.(1)	3
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+   double a,b,c,d;
+   a=3;    b=2;    c=4;
+   d=b/c*sqrt(c)/pow(a,b);
+   swap(a,d);
+   cout << d << endl;
+    return 0; } "	3	2	0.(1)	0
+"Dastur natijasi qanday bo'ladi?
+int main( ){
+    int a,b,c;
+    a=2;     b=0;     c=0;
+    bool e= a>=b && c<=b;
+    cout << a+e << endl;
+    return 0; } "	3	2	0	dasturda xatolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    int a,b,c;
+    a=3;    b=4;    c=8;
+    bool e= a>=b && c<=b;
+    if (e)  {
+        if (e%11==0)  {
+            if (a==3)  {
+                cout << ""C++"";  }
+            cout << ""Dasturchi""; }
+        cout << ""Dasturlash""; }
+    return 0;}"	Ekranga xech narsa chiqmedi	Dasturda xatolik bor	C++	Dasturlash
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    int a,b,c;
+    a=3;    b=4;    c=8;
+    bool e= a<=b && c>=b;
+    if (e) {
+        if (e%11==0) {
+            if (a==3) {
+                cout << ""C++""; }
+            cout << ""Dasturchi""; }
+        cout << ""Dasturlash""; }
+    return 0;}"	 Dasturlash	 C++	Ekranga xech narsa chiqmedi	Dasturda xatolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    int a,b,c; double d;
+    a=0;    b=2;    c=1;
+    d=(a+b)/c+pow(b,a)/b;
+    cout << d << endl;
+    return 0;}"	2,5	2	0	xatolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    int a,b,c; double d;
+    a=0;    b=2;    c=1;
+    d=pow(a+(b+2*c)/2,2)/(a+2*b);
+    cout << d << endl;
+    return 0;}"	1	0	2	xatolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    int a,b,c;
+    a=4;    b=8;    c=0;
+    bool e= a>b || b>c;
+    cout << e << endl;
+return 0;}"	1	-1	0	xatolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    short d;
+    double a,b,c;
+    a=1.5;     b=3;    c=2.3;
+    d=a+b+c;
+    cout << d << endl;
+return 0;}"	6	6,8	Ekranga xech nars chiqmedi	xatolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    string s=""mustaqil ish"";
+    int n=s.find(""mustaqil ish"");
+    cout << n << endl;
+return 0; }"	0	12	8	1
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    int n(2.8),b=12;
+    cout << b/n;
+return 0; } "	6	4	12	Dasturda xatolik bor
+" Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    string a,s=""men dasturchi bolaman"";
+    int n=s.find(' ');
+    s.erase(0,n+1);
+    n=s.find(' ');
+    a=s.substr(0,n);
+    cout << a << endl;
+ return 0;  }"	dasturchi	 men	dasturchi bolaman	men dasturchi  bolaman
+Chala shart operatorini korsating.	if (…) {…}	if (…) {…}  else {…}	for (…;…;…)	while (…) {…}
+"Dasturning natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ) {
+    int q,e;  q=0;    e=0;
+    bool b, a = q == e;
+    b = a >=q;
+    cout << b+a;
+ return 0;}"	2	1	dasrurda xatolik bor	0
+"Dasturning natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ) {
+    short a,b; a=0;    b=9;
+    if (a=b-9) {
+        cout << ""Yakuniy"";    }
+    else    {
+        cout << ""Yakunlandi"";    }
+ return 0; }"	Yakunlandi	yakuniy	dasrurda xatolik bor	Ekanga xech narsa chiqmedi
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    int a,b;   a=2;    b=3;
+    cout << (a*b)*(1/b);
+ return 0;}"	0	2	1	dasturda xtolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main( ){
+    int a,b;  a=2;    b=3;
+    cout << (a*b)*pow(b,-1);
+ return 0;}"	2	1	0	dasrurda xatolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    int a,b;    a=7;    b=4;
+    if (a*b%3==1) {
+        if (a/b==1)    {
+            if (b/a>0)   {
+                cout << ""Xayir""; return 0;            }
+            cout << ""Tugadi""; return 0;        }
+        cout << ""Dastur"";    }
+ return 0;}"	tugadi	xayr	dastur	dasrurda xatolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    double a,b;
+    b=4.4;   a=b/2.2;
+    cout << b/a;
+ return 0; }"	2,2	2	1	dasrturda xatolik bor
+"Dastur natijasi qanday bo'ladi?
+#include <iostream>
+using namespace std;
+int main( ){
+    int b=20.5;
+    bool a = 20>=b;
+    if (a)  { 
+     if (b<=b)  { cout << ""Bola""; return 0;  }
+        cout << ""Bolalar""; return 0;  }
+ return 0;}"	 Bola	 Bolalar	"ekranga hech narsa chiqmaydi
+"	Dasturda xatolik bor
+ strcpy(satr1,satr2) – funksiyasi vazifasi	" Satr2 dan satr1 ga nusxa oladi.
+"	"Satr1 dan satr2 ga nusxa oladi.
+"	"Bunday funksiya mavjud emas.
+"	"Satr1 bilan satr2 ni birlashtirish.
+"
+ strncpy( satr1,satr2, int len) – funksiyasi ning vazifasi	"Satr2 dan satr1 ga dastlabki len ta belgini nusxasini oladi, lekin xosil bo’lgan satrning oxiriga ‘\0’ belgisini joylashtirmaydi.
+"	"Bunday funksiya mavjud emas
+"	"Satr1 dan satr2ga dastlabki len ta belgini nusxasini oladi, lekin xosil bo’lgan satrning oxiriga ‘\0’ belgisini joylashtirmaydi.
+"	"Satr1 dan satr2ga dastlabki len ta belgini nusxasini oladi.
+"
+ strcat(satr1, satr2) – funksiyasi vazifasi	Satr1 dan keyin satr2 ni joylashtirib chiqadi.	Satr1 dan satr2 ni qidiradi	Satr2 dan satr1 ni qidiradi	Satr1 va satr2 ni bir-biriga ulaydi.
+ strncat( satr1,  satr2, int a) – funksiyasi. 	Satr2dan keyin satr1 ni dastlabki  a ta belgisini joylashtirib satr xosil qiladi	 Satr1dan keyin satr2 ni dastlabki  a ta belgisini joylashtirib satr xosil qiladi	Satr2dan keyin satr1 ni dastlabki  a ta belgisini o’chirib satr xosil qiladi.	 Satr1dan keyin satr2 ni dastlabki  a ta belgisini o’chirib satr xosil 
+ strcmp(satr1,  satr2) – funksiyasi vazifasi.	Satr1 bilan satr2 ni solishtiradi. Agar satrlar bir xil bo’lsa, 0 qiymat qaytaradi.	Satr1 bilan satr2 ni solishtiradi.	 Satr1 bilan satr2 ni solishtiradi. Agar satrlar har xil bo’lsa, 0 qiymat qaytaradi	 Satr1 bilan satr2 ni solishtiradi. Agar satrlar bir xil bo’lsa, qiymat qaytarmaydi.
+"string a(""yaxshi"");
+string b(""kun"");
+string c=a+b;
+cout<<c;
+Dastur natijasi qanday?"	"yaxshikun" 	"yaxshi kun"	"yaxshi+kun"	 "a+b"
+ Length() funksiyasining vazifasini aniqlang	String tipidagi satr uzunligini aniqlaydi.	 Char tipidagi satr uzunligini aniqlaydi.	Bunday funksiya mavjud emas.	Satr uzunligini aniqlaydi
+ Empty() funksiyasinig vazifasi	Satrni bo’shligini tekshirib, mantiqiy qiymat qaytaradi	 Satrni bo’shligini tekshirib, bo’sh bo’lsa 0 qiymat qaytaradi	Satrni bo’shligini tekshirib, bo’sh bo’lsa qiymat qaytarmaydi	Satrni bo’shligini tekshirib, bo’sh bo’lmasa o’chiradi
+"string c=""614"";     
+c=c.insert(3,""-10"");  cout<<c; 
+natijani aniqlang"	"614-10"	"614 10"	 "-10"	"61410"
+"string g=“yaxshi”;   g=g.erase(4,2);  cout<<g;
+natijani aniqlang"	“yaxs”	“y”	 “ya”	 “yax”
+  S.substr(n1,n2) ning fazifasini toping.	S satrning n1 elementidan boshlab n2 ta element ajratib olish.	 S satrning n1 elementidan boshlab n2 ta elementini o’chirib tashlash.	 S satrning uzunligini aniqlash.	Bunday funksiya yo’q
+String tipi uchun satr uzunligini aniqlovchi funksiyani toping.	Length();	  Strlen();	 Erase();	 Substr();
+string s=”dasturlash”;  string a=s.substr(0,4); cout<<a;  ?	dast	das	dastu	dastdastdastdast
+string s=”dasturlash”;  string a=s.erase(0,4); cout<<a; ?	urlash	das	urla	dast urlash
+int a=s.find (“a”); funksiyani ma’nosi?	S satrdan birinchi uchragan “a”ni nomerini qaytaradi	S satrdan oxirgi uchragan “a”ni nomerini qaytaradi.	S satrning uzunligini qaytaradi	S satrdan “a”larni sanab chiqadi.
+Javoblardan qaysi biri klaviaturadan kiritishni talab qiladi?	cin>>a; va   getline(cin,a);	cin>>a;	 cout<<a;	 getline(cin,a);
+string a=”yakuniy nazorat”; int s=a.strlen(); cout<<s;  ?	 Xatolik habari e’lon qilinadi.	 S=14;	 S=15;	S=13
+string a=”yakuniy nazorat”; int s=a.length(); cout<<s; ?	15	11	14	13
+int x = 90, y = ++x; x va y ning qiymatini toping	91 91	90 91	90 90	91 90
+int x = 90, y = x--; x va y ning qiymatini toping	89 90	90 90 	89 89	90 89
+int x = 90, y = --x; x va y ning qiymatini toping	89 89	90 89	90 90	89 90
+Shartsiz o`tish operatorini ko`rsating	goto	if	for	switch
+C++da funksiyada qiymat qaytarish operatori?	return	function	New	Delete
+"#include <iostream>
+using namespace std;
+int main(){ 
+int q; cin>>q;
+  if(q>0)  {
+    int t=33; }
+    cout<<t<<endl;
+return 0;}
+Dastur natijasi qanday?"	Xatolik yuz beradi	33	30	32
+"int g=3;
+g+=4;
+g-=2;
+cout<<g<<endl; g o'zgaruvchining qiymatini toping?"	5	7	4	2
+Xato xosil qilingan funksiyani toping:	"void alfa( ) {cout<<”salom”;
+return 0;};"	void  sar( ) {cout<<”salom”;};	"int modul(int a){
+int r=a; if(r<0){ return -1*a;} else{return a;}};"	void salom{ cout<<"xato  bu";};
+"x=6 y=6 dagi chiquvchi natijani toping.                            int main( ){ 
+double x, y;
+cin>>x>>y;
+if (x<=y){
+cout<<""0""<<"" ""<<y;}
+else{
+cout <<x<< "" "" << y;}
+return 0;  }"	0 6	6 6	6	66
+"a=348 dagi chiquvchi qiymatini toping.                          int main( )    
+int a; cin>>a;
+if(a%3==0) cout<<""bo`linadi"";
+return 0;}"	bo’linadi	dastur xato	 qiymat chiqmaydi	348
+"n=3 natijani toping
+int main( ){
+int n; cin>>n;
+switch(n) {
+case 1: case 2:
+case 3: case 4:  cout<<""ok"";  break;}
+return 0;}"	ok	Ok	3	case:3
+for(int i=1; i<=n; i++) bu holatda i<=n qismi qanday nomlanadi	sikl takrorlanish sharti	majburiy to`xtatish belgisi	ilova	sikl parametrini oshirish
+ for(int i=1; i<=n; i++) bu holatda i++ qismi qanday nomlanadi	sikl parametrini oshirish	majburiy to`xtatish belgisi	sikl takrorlanish sharti	ilova
+"a=5 b=6 natijani toping 
+int main( ){
+int a,b,c;
+cin>>a>>b;
+c= a>b?a:b;
+cout<<c;
+return 0;}"	6	5	9	11
+"a=5 n=6 natijani toping  
+int main( ){
+double a,n;
+cin>>a>>n;
+ for(int i=1; i<=n; i++)a=a+1;
+cout<<a;
+ return 0;}"	11	10	12	121
+"a=4 b=4 natijani toping
+int main( ){
+int a,b, k=0;
+cin>>a>>b;
+for(int i=1; i<=a; i++){k+=b;}
+cout<<k;
+return 0;}"	16	43	56	90
+"a=98765 bo'lsa natijani toping
+int main( ){
+int a; cin>>a;
+if(a%2==0)cout<<""juft"";
+else cout<<""toq"";
+return 0;}"	toq	98765	 juft	2
+"a=5 natijani chiqaring
+int main( ){
+int a; cin>>a;
+if(a>0) cout<<99999;
+if(a<0) cout<<33333;
+if(a==0) cout<<00000;
+return 0;}"	99999	33333	0	Nan
+" a=8 b=15 dagi qiymatini toping
+int main( ){ 
+int a,b;
+cin>>a>>b;
+if(b<a){a=a+1;}
+cout<<a;
+return 0;}"	8	15	9	16
+" n=3 dagi natijani toping 
+int main( ){
+int n;cin>>n;
+for(int i=1; i<=n; i++)
+cout<<""Salom"";
+return 0;  }                                                                 "	SalomSalomSalom	SalomSalom	salom	salomsalomsalom
+" n=1 natijani toping
+int main( ){
+int n; cin>>n;
+switch(n) {
+case 1:  case 2:
+case 3:  case 4:  cout<<""ok"";  break;}
+return 0;}"	ok	Xech qanday natija chiqmaydi	5	case:5
+" a=10 b=6 natijani toping                                        
+int main( ){ 
+int a,b,c;
+cin>>a>>b;
+c= a>b?a:b;
+cout<<c;
+return 0;}"	10	6	16	4
+"a=6 n=6 natijani toping
+int main( ){   
+double a, n; cin>>a>>n;
+for(int i=1; i<=n; i++) a=a+1;
+cout<<a;
+return 0;}"	12	13	11	10
+" Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+int powx(int x) {
+    int a=1,b=1,c;
+    for (int i=1;i<=x;i++)
+    { c=a+b;  a=b;  b=c;  }
+    return c;}
+int main( ){
+    int x=8;
+    cout << powx(x);
+    return 0;}"	55	34	13	dasturda xatolik xabari chiqadi
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+int sqr(int a, int b) {
+    if (b==0) return 1;
+    else
+    return sqr(a,b-1)*a;}
+int main( ){
+    int a=2,b=3;
+    cout << sqr(a,b);
+    return 0;}"	8	4	27	dasturda xatolik xabari chiqadi
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+int sqr(int a, int b) {
+    if (b==0) return 1;
+    else
+    return sqr(a,b-1)*(a+1);}
+int main( ){
+    int a=2,b=3;
+    cout << sqr(a,b);
+    return 0;}"	27	4	8	dasturda xatolik xabari chiqadi
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+int sqr(int a) {
+    if (a==0) return 0;
+    if (a==1) return 1;
+    else
+    return sqr(a-1)*(a);}
+int main( ){
+    int a=3;
+    cout << sqr(a);
+    return 0;}"	6	9	3	dasturda xatolik xabari chiqadi
+Bog'langan funksiyalar yoki sinflar oilasini tuzishda nimadan foydalaniladi? 	shablon	rekursia	class	qayta yuklash
+C++ dasturlash tilida parametrlangan turlar deb nimaga nisbatan aytiladi? 	shablon	rekursia	class	qayta yuklash
+template xizmatchi so’zi nimani e’lon qilishda ishlatiladi? 	shablon	rekursia	class	qayta yuklash
+Funksiya shablonini yaratishda formal tiplarning har birining oldida qanday xizmatchi so'zi qo'yilishi kerak? 	typename	template	void	T
+"#include <iostream>
+int main() {
+int i;
+for(i = 0; i < 9; i++)
+std::cout << i+1;
+return 0;
+}
+dastur bajarilganda ekranda nimalar chiqadi?"	1 dan 9 gacha bo'lgan sonlar chiqadi	standart nomlar fazozi ishlamaydi	0 dan 9 gacha bo'lgan sonlar chiqadi	0 dan 8 gacha bo'lgan sonlar
+Kiritish oqimini qayta yuklash uchun quyida keltirilgan formalardan qaysi biri to'g'ri?	istream& operator >> (istream& input, Complex& x)	ostream& operator >> (istream& input, Complex& x)	istream& operator >> (ostream& input, Complex& x)	ostream& operator >> (ostream& input, Complex& x)
+Chiqarish oqimini qayta yuklash uchun quyida keltirilgan formalardan qaysi biri to'g'ri?	ostream& operator << (ostream& input, Complex& x)	istream& operator << (ostream& input, Complex& x)	ostream& operator << (istream& input, Complex& x)	istream& operator << (istream& input, Complex& x)
+Kompleks sinfi ustida qo'shish amalini qayta yuklash uchun keltirilgan formalarning qaysi biri to'gri?	Complex& operator + (Complex& x, Complex& y)	Complex& operator + (int& x, int& y)	Complex& operator + (float& x, float& y)	Complex& operator + (double& x, double& y)
+... - barcha ob'yektlar uchun kirish huququni beradi.	public	private	protected	static
+Konstruktor bu –	bu usul bo'lib, uning nomi klass nomi bilan ustma–ust tushadi	bu usul bo'lib, uning nomi construc deb nomlanadi	bu klassning maydoni	bu usul bo'lib, uning nomi klass nomi bilan ustma–ust tushmaydi
+Klass yaratilganda unga nechta konstruktor va nechta destruktor e'lon qilish mumkin?	1 ta va undan ortiq konstruktor va 1 ta destruktor	2 ta konstruktor va 1 ta destruktor	1 ta konstruktor va 2 ta destruktor	1 ta konstruktor va 1 ta destruktor
+Destruktor e'lon qilishda qaysi belgidan foydalaniladi?	~	new	&	delete
+"#include <iostream>
+#include <string>
+using namespace std;
+class Ahror{
+private:
+    string Ism;
+    int Yosh;
+   friend void Printyosh(const Ahror& shaxs);
+public:    Ahror(string KiritIsm, int KiritYosh)
+    {
+        Ism = KiritIsm;
+        Yosh = KiritYosh;
+    }
+};
+void Printyosh(const Ahror& shaxs)
+{
+    cout<<shaxs.Yosh<<endl;
+}
+int main()
+{
+    Ahror a(""Ahror"",27);
+        Printyosh(a);
+    return 0;
+} dastur natijasi qanday?"	27	ahror	Ahror	Ahror,27
+"#include <iostream>
+#include <string>
+using namespace std;
+class Ahror{
+private:
+    string Ism;
+    int Yosh;
+   friend void Printyosh(const Ahror& shaxs);
+  Ahror(string KiritIsm, int KiritYosh)
+    {
+        Ism = KiritIsm;
+        Yosh = KiritYosh;
+    }
+};
+void Printyosh(const Ahror& shaxs)
+{
+    cout<<shaxs.Yosh<<endl;
+}
+int main()
+{
+    Ahror a(""Ahror"",27);
+        Printyosh(a);
+    return 0;
+} dastur natijasi qanday?"	dasturda xatolik yuz beradi	27	Ahror	Ahror,27
+C++ dasturlash tilida dasturni boshlanishini va tugashini bildiruvchi belgini ko'rsating	{ }	< >	> <	( )
+Xar bir ifoda … bilan yakunlanadi?	;	:	,	*
+Qiymat uzatish operatorini ko'rsating.	=	= =	: :	.
+Katta va kichik harflardan, ostki chiziq bilan boshlanadigan ketma ketlik   ….   deyiladi.	identifikator	xizmatchi so'z	massiv	funksiya
+Parametrli takrorlash operatorini ko'rsating	for	if	while	switch
+class nima ?	"Bu murakkab ko'rinishga ega bo'lib, bir joyga jamlangan funksiyalar va ma'lumotlar 
+yozuvlarini o'zida mujassamlashtiradi."	o'zgaruvchi	funksiya	"bu ma'lumotlar 
+yozuvlarini o'zida mujassamlashtirgan metod."
+Qaysi javobda "Person" nomli klass to'g'ri elon qilingan?	"class Person
+{
+ private:
+  string fname;
+  string faddress;
+ public:
+  void show();
+};
+"	"class{
+ private:
+  string Person;
+  string faddress;
+ public:
+  void show();
+};
+"	"public class
+{
+ private: Person;
+ public:
+  void show();
+};"	"public class TPerson
+{
+ private: Person;
+ public:
+  void show();
+};"
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 0; i <= n; i = i + 2)
+    s += i;
+    cout << s << endl;
+"	20	10	21	19
+"n=9 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 0; i <= n; i++)
+    if (i % 2==1)
+        s += i;
+    cout << s << endl;"	25	35	15	26
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    if (n % i == 0)
+        s += i;
+    cout << s << endl;"	18	16	17	19
+"n=15 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    if (n % i == 0)
+        s += 1;
+    cout << s << endl;"	4	6	5	3
+"n=5 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    s *= i;
+    cout << s << endl;"	0	1	10	-1
+"n=6 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 1;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    s *= i;
+    cout << s << endl;"	720	120	700	24
+"n=12 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 2; i <= n; i++)
+    {
+        bool b = true;
+        for (int j = 2; j < i; j++)
+          if (i % j == 0)
+          {
+              b = false;
+              break;
+          }
+        if ( b ) s += i;
+    }
+    cout << s << endl;"	28	15	27	30
+"n=15 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        int k = 0;
+        for (int j = 1; j < i; j++)
+        if (i % j == 0) k++;
+        if ( k == 1 ) s += i;
+    }
+    cout << s << endl;"	41	40	42	51
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 1, i = 2;
+    cout << ""n=""; cin >> n;
+    for (int k = 1; k <= n; k++)
+    s *= i;
+    cout << s << endl;"	256	128	64	100
+"n=3 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 1, a;
+    cout << ""n=""; cin >> n;
+    a = n;
+    for (int k = 1; k <= n; k++)
+    s *= a;
+    cout << s << endl;"	27	9	81	30
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    for (int k = 1; k <= n; k++)
+    {
+        if (k % 5 == 0)
+            continue;
+        s += k;
+    }
+    cout << s << endl;"	40	50	45	30
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+
+    cout << ""n=""; cin >> n;
+
+    for (i = 1; i <= n; i++)
+    if (i % 2)
+        s += i;
+    else
+        s += 2 * i;
+   cout << s << endl;"	56	65	58	50
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    if (i % 3 == 0)
+       s += 2 * i;
+   cout << s << endl;"	36	30	26	20
+"n=12 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    switch ( i % 5 )
+    {
+     case 0: s += i;
+         break;
+     default : s++;
+    }
+   cout << s << endl;"	25	30	20	35
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    switch ( i % 10 )
+    {
+     case 0:
+     case 2:
+     case 4:
+     case 6:
+     case 8: s += i;
+          break;
+     default : s++;
+    }
+   cout << s << endl;"	35	30	36	40
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 0, n;
+    cout << ""n=""; cin >> n;
+    dastur_uz : i++;
+    s += i;
+    if (i != n)
+       goto dastur_uz;
+    else
+        s *= 2;
+   cout << s << endl;"	72	60	70	64
+"n=12 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, k = 1, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    s += k;
+    k += i;
+    cout << s << endl;"	12	6	10	14
+"n=9 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, k = 1, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    k += i;
+    s += k;
+    cout << s << endl;"	46	45	40	47
+"n=6 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, k = 1, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    {
+        k += i;
+        s += k;
+    }
+   cout << s << endl;"	62	63	60	64
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    if (i % 2 == 0)
+        s += i; s *= 2;
+    cout << s << endl;"	40	50	30	42
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    if (i % 2 == 0)
+    {
+          s += i; s *= 2;
+    }
+   cout << s << endl;"	104	105	100	108
+"n=12 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i, n;
+    cout << ""n=""; cin >> n;
+    for (i = 1; i <= n; i++)
+    if (i % 5 == 0)
+        break;
+    else
+        s += i;
+   cout << s << endl;"	10	20	30	15
+"n=13 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 1, n;
+    cout << ""n=""; cin >> n;
+    do {
+        i += 2;
+        if (i % 3 == 0)
+            s += i;
+        else
+            s++;
+    } while (i <= n);
+    cout << s << endl;"	31	32	33	30
+"n=5 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 1, p = 1, n;
+    cout << ""n=""; cin >> n;
+    while (i <= n)
+    {
+          s += i;
+          p *= i;
+          i++;
+    }
+   s += p;
+   cout << s << endl;"	135	26	100	130
+"n=9 bo'lganda dastur qismi qanday natija beradi?
+    int s = 0, i = 1, p = 0, k = 5, n;
+    cout << ""n=""; cin >> n;
+    while (i <= n)
+    {
+          if (i % 2 == 0)
+              s += k;
+          else
+              p++;
+          i++;
+    }
+    p += k;
+    s += p;
+   cout << s << endl;"	30	20	40	50
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0, i = 0;;
+    cout << ""n=""; cin >> n;
+    while (1 > 0)
+    {
+        i++;
+        s += i;
+        if ( i >= n ) break;
+    }
+    cout << s << endl;"	55	45	50	56
+"n=8 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    int i = n;
+    while (i > 0)
+    {
+        s += i--;
+        if (i >= n) break;
+    }
+    cout << s << endl;"	36	63	25	30
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    int i = 0;
+    do
+    {
+        i++;
+        s += i++;
+    } while ( i < n);
+    cout << s << endl;"	25	15	20	20
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    int i = n;
+    do
+    {
+        s += i--;
+    } while ( i > 0);
+    cout << s << endl;"	55	50	45	60
+"a=5, b=10 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = 0;
+    while (i <= a)
+    {
+        s += i;
+        i += b;
+    }
+    cout << s << endl;"	0	1	50	15
+"a=3, b=4 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = 0;
+    while (i <= a)
+    {
+        if (i % b == 0) s += i;
+        i++;
+    }
+    cout << s << endl;"	0	12	3	4
+"a=10, b=10 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = 0;
+    do
+    {
+        i = i + b;
+        s += i;
+    } while ( i < a );
+    cout << s << endl;"	10	5	11	100
+"a=7, b=5 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = 0;
+    do
+    {
+        i++;
+        if (i % b == 0) s += i;
+    } while ( i < a );
+    cout << s << endl;"	5	35	7	12
+"a=10, b=5 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = b;
+    while (i <= a)
+    {
+        s += 1;
+        i++;
+    }
+    cout << s << endl;"	6	10	50	5
+"a=11, b=6 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s = 0;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    int i = b;
+    while (i <= a)
+    {
+        s += i;
+        i++;
+    }
+    cout << s << endl;"	51	11	6	66
+"a=10, b=20 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    s = a * b;
+    while (a != b)
+    if (a > b) a -= b;
+        else   b -= a;
+    s /= a;
+    cout << a << endl;"	10	20	200	100
+"a=20, b=30 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    s = a * b;
+    while (a != b)
+    if (a > b) a -= b;
+        else   b -= a;
+    s /= a;
+    cout << s << endl;"	60	30	20	50
+"a=10, b=15 bo'lganda dastur qismi qanday natija beradi?
+    int a, b, s;
+    cout << ""a=""; cin >> a;
+    cout << ""b=""; cin >> b;
+    s = 0;
+    while (a >= b)
+    {
+        s++;
+        a -= b;
+    }
+    s += a;
+    cout << s << endl;"	10	150	25	100
+"n=899 bo'lganda dastur qismi qanday natija beradi?
+    int n, s;
+    cout << ""n=""; cin >> n;
+    s = 0;
+    while (n > 0)
+    {
+        s += n % 10;
+        n /= 10;
+    }
+    cout << s << endl;"	26	25	18	3
+"n=7 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 1;
+    cout << ""n=""; cin >> n;
+    while (n >= 2)
+    {
+          s *= n;
+          n -= 2;
+    }
+    cout << s << endl;"	105	35	100	100
+"n=10 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    while (!( s * s > n))
+    s++;
+    cout << s << endl;"	4	6	5	10
+"n=30 bo'lganda dastur qismi qanday natija beradi?
+    int n, q;
+    cout << ""n=""; cin >> n;
+    if (n != 1) q = n / 2;
+        else    q = 1;
+    while (!(q * q <= n))
+    q--;
+    cout << q << endl;"	5	6	30	4
+"n=40 bo'lganda dastur qismi qanday natija beradi?
+    int n, k = 0, s = 1;
+    cout << ""n=""; cin >> n;
+    while (!(s > n))
+    {
+        s *= 3;
+        k++;
+    }
+    cout << k << endl;"	4	10	40	30
+"n=80 bo'lganda dastur qismi qanday natija beradi?
+    int n, s = 0;
+    cout << ""n=""; cin >> n;
+    while (3 <= n)
+    {
+        n /= 3;
+        s++;
+    }
+    cout << s << endl;"	3	10	30	2
+"n=876 bo'lganda dastur qismi qanday natija beradi?
+void funksiya(int *a, int *n, int *k)
+{
+    *n = 0;
+    *k = 0;
+    while (*a > 0)
+    {
+        *k  += *a % 10;
+        *n += 1;
+        *a /= 10;
+    }
+}
+int main()
+{
+    int n, b, c;
+    cout << ""n=""; cin >> n;
+    funksiya(&n, &b, &c);
+    cout << b + c + n;
+    return 0;
+}"	24	23	21	876
+"n=5 bo'lganda dastur qismi qanday natija beradi?
+int funksiya(int n)
+{
+    while (n > 0)
+    {
+        cout << n % 10;
+        n /= 10;
+    }
+    return n;
+}
+int main()
+{
+    int n;
+    cout << ""n=""; cin >> n;
+    cout << funksiya(n);
+    return 0;
+} "	50	5	10	15
+"n=456 bo'lganda dastur qismi qanday natija beradi?
+int funksiya(int n)
+{
+    int k = 0;
+    while(n > 0)
+    {
+        k++;
+        n /= 10;
+    }
+    return k;
+}
+int main()
+{
+    int n;
+    cout << ""n=""; cin >> n;
+    cout << funksiya(n);
+    return 0;
+}"	3	456	15	-456
+"n=6 bo'lganda dastur qismi qanday natija beradi?
+int funksiya(int k)
+{
+    if (k == 0)
+        return 1;
+    else
+        if (k == 1)
+            return 1;
+        else
+            return k * funksiya(k - 1);
+}
+int main()
+{
+    int n;
+    cout << ""n=""; cin >> n;
+    cout << funksiya(n) << endl;
+    return 0;
+}"	720	120	24	500
+Sharti keyin berilgan sikl operatorini ko'rsating.	do{}while()	for()	while()	if()
+Parametrli sikl operatorini ko'rsating.	for()	do{}while()	while()	if()
+Sharti oldin berilgan sikl operatorini ko'rsating.	while()	do{}while()	if()	for()
+Sikl operatorining qaysi turida sikl tanasi kamida bir marotaba majburiy tarzda bajariladi?	do{}while()	for()	while()	if()
+Sikl operatorining qaysi turida sikl tanasi bajarilmasligi mumkin?	while(), for()	do{}while()	while()	for()
+for() sikl operatorlarining qaysi turiga mansub?	Parametrli	Sharti oldin berilgan	Sharti keyin berilgan	To'gri javob yo'q
+while() sikl operatorlarining qaysi turiga mansub?	Sharti oldin berilgan	Sharti keyin berilgan	Parametrli	To'gri javob yo'q
+do{ }while() sikl operatorlarining qaysi turiga mansub?	Sharti keyin berilgan	Sharti oldin berilgan	Parametrli	To'gri javob yo'q
+"int a=15;
+while(a>0)
+{--a;}
+Dastur qismida sikl tanasi necha marta bajariladi?"	15	14	16	Bajarilmaydi
+Sharti oldin berilgan sikl operatori tuzilishini ko'rsating.	while(shart) {sikl tanasi;}	while(sikl tanasi) {shart;}	do{sikl tanasi;} while(shart)	do{shart} while(sikl tanasi;)
+Sharti keyin berilgan sikl operatori tuzilishini ko'rsating.	do{sikl tanasi;} while(shart)	while(shart) {sikl tanasi;}	while(sikl tanasi) {shart;}	do{shart} while(sikl tanasi;)
+"int i=1;
+while(i>-1)
+{cout<< I << endl; i++;}
+Dastur qismida sikl tanasi necha marta bajariladi?"	Cheksiz	Bajarilmaydi	2	1
+"int a=0;
+while(a-1<5)
+{a++;}
+Dastur qismida sikl tanasi necha marta bajariladi?"	6	4	1	5
+Parametrli sikl operatoridan tog'ri foydalanilgan javobni ko'rsating.	for (int i=0; i<=n; i++)	for (int i=0, i<=n; i++)	for (int i=0; i<=n; i++ ;)	for (int i=0, i<=n, i++,)
+"Quyidagi sikl operatori 10 martta bajarilishi uchun n ning qiymati qanday bo'lishi lozim?
+for (int i=0; i<n; i++) {sikl tanasi;}"	10	9	8	11
+"for (int a=0; a<50; a+=10) {cout<<a<<"",""}
+Dastur qismida qanday natija chiqariladi?"	0,10,20,30,40,	10,20,30,40,50	1,2,3,4,5	0,10,20,30,40
+"int s=-1;
+for (int a=0; a<10; a++) {s+=a;}
+cout<< s <<endl;
+Dastur qismida qanday natija chiqariladi?"	44	45	55	46
+Agar sinf struct xizmatchi so’zi bilan kiritilgan bo’lsa va murojaat spetsifikatori berilmagan bo’lsa, uning hamma komponentalari … bo’ladi. 	Public	Private	Protected	Xususiy 
+Agar sinf class xizmatchi so’zi bilan kiritilgan bo’lsa va murojaat spetsifikatori berilmagan bo’lsa, uning hamma komponentalari … bo’ladi. 	Private	Xususiy	Protected	A va B
+Qaysi turdagi klass a’zolarini nafaqat shu klassning a’zolari yoki do’st klasslarida, balki ushbu klass orqali hosil qilingan klass a’zolarini ishlatish mumkin bo’ladi? 	Protected	Private	Public	Barchasida 
+Qaysi murojaat spetsifikatorida e’lon qilingan komponentalar vorislikka o’tmaydi? 	Private 	Public	Himoyalangan	Protected 
+"#include <iostream>
+using namespace std;
+class Talaba {
+          string ism, fam;
+          int yosh;
+};
+Dasturda Talaba klassining maydonlari qanday spetsifikatorda e’lon qilingan? "	Private	Public	Protected	Struct 
+"#include <iostream>
+using namespace std;
+class Talaba {
+        public:
+              string ism, fam;
+              int yosh;
+        protected:
+              int baho;
+};
+int main() {
+   Talaba t;
+   t.baho=5;
+   t.yosh=20;
+   cout<<t.baho<<"",""<<t.yosh<<endl;
+return 0;
+Dastur qanday natija beradi?"	Dasturda xatolik ro’y beradi	5	20,5	5, 20
+"#include <iostream>
+using namespace std;
+class Nuqta{
+        public:
+             void SetX (int x) {
+            this->x = x; }
+            void SetY (int y) {
+                this->y = y; }
+        protected:
+             int x, y;
+ };
+Dasturdagi klass metodlarini ko’rsating."	SetX(), SetY()	public, protected	Nuqta	x, y
+Avvaldan mavjud klassdan voris olish qaysi javobda to’g’ri ko’rsatilgan?	class Fazo:public Nuqta	class Inson.public Talaba	class;protected  Fan	class Fan::public Dasturlash()
+Klasslardan nechta turda voris olish mumkin?	3	2	5	Faqat public spetsifikatori orqali 
+"#include <iostream>
+using namespace std;
+class Kompleks{
+int butun, mavxum;
+void Show () {
+cout<<butun<<”+”<<mavxum<<""i""<<endl;
+}
+};
+int main () {
+Kompleks a;
+a.butun=5;
+a.mavxum=3;
+a.Show();
+return 0;
+
+Dastur qanday natija beradi?"	Dasturda xatolik sodir bo’ladi	5+3i	3+5i	3i
+Klasslarda do’st funksiyalar qaysi xizmatchi so’z orqali bog’lanadi?	friend	template	friend function	struct
+Klasslarda funksiyalarni qayta yuklash uchun qaysi xizmatchi so’zdan foydalaniladi?	operator	template	function	structure
+Inkapsulyatsiya nima ?	tashqi ta’sirlardan himoyalangan dastur qismi	obyektni boshqarish pulti	faqat ushbu ekzemplyarga kirishga ruxsat bor	barcha obyektlar uchun kirish uchun ruxsat bor
+Interfeys nima ?	obyektni boshqarish pulti	sinf butunlay yangi metodlar yoki hususiyatlarni qo‘shadi	metodlari yoki hususiyatlarini to‘g‘ridan-to‘g‘ri olib qo‘ya qoladi	Himoya qilingan
+Vorislik turi o’z navbatida    ………….   bo’lishi mumkin	public, private, protected	ochiq, yopiq, operatorli	ob'yekt	class
+"Vorislik yordamida qurilgan sinfning metod va hususiyatlari necha  ko‘rinishga ega bo‘lishi mumkin?
+"	3	5	2	4
+… da barcha obyektlar uchun kirishga ruxsat beriladi.	public	protected	private	class
+… da faqat ushbu ekzemplyarga va har qanday tarmoq sinflarga kirishga ruxsat beriladi.	protected	public	private	class
+…da faqat ushbu ekzemplyarga kirishga ruxsat beriladi.	private	protected	public	class
+"class Talaba
+{ public:
+    string ism;
+  private:
+  double step;
+  protected:
+    string guruh;
+};
+class Talaba2:public Talaba
+{ public:
+   int yosh; 
+}; 
+Talaba2 klassi nechta maydonga ega?"	3 ta	4 ta	1 ta	2 ta
+"class Talaba
+{
+  private:
+  double step;
+};
+class Talaba2:public Talaba
+{ public:
+   int yosh; 
+};
+Talaba2 klassi nechta maydonga ega?"	 1 ta	2 ta	3 ta	Maydonga ega emas
+… - oldin yaratilgan sinfga o'xshash sinf yaratishda qo'llaniladi va oldin yaratilgan sinfni qaytadan yaratmasdan uni takomillashtiradigan yangi sinf yaratishni imkoniyatini beradi.	Vorislik	Class	Struktura	Sinf
+Fayldagi ma’lumotni o’qish uchun ios:: xizmatchi so’zidan so’ng qaysi spetsifikator yoziladi?	in	out	app	ate
+Faylga ma’lumotni fayl oxiriga yozish uchun ios:: xizmatchi so’zidan so’ng qaysi spetsifikator yoziladi?	app	in	out	ate
+Fayl ochilganda kursor ko’rsatkichini fayl oxiriga ko’chirish uchun ios:: xizmatchi so’zidan so’ng qaysi spetsifikator yoziladi?	ate	app	in	out
+Fayl ochilganda fayl tarkibini tozalash uchun ios:: xizmatchi so’zidan so’ng qaysi spetsifikator yoziladi?	trunc	ate	app	in
+Qaysi metod (uslub) ochilgan faylni yopish uchun xizmat qiladi?	close()	eof( )	trunc	ate
+Fayllarni o’qishda faylni oxirini aniqlash uchun qaysi metod (uslub) dan foydalaniladi?	eof( )	close()	exit	ate
+eof( ) metodi (uslub) faylni oxiriga borgan bo’lsa, qanday qiymat qabul qiladi?	true	false	trunc	ate
+eof( ) metodi (uslub) faylni oxiriga bormagan bo’lsa, qanday qiymat qabul qiladi?	false	true	trunc	ate
+Fayldagi barcha so’zlarni konsolga chiqarish uchun qaysi metod (uslub) dan foydalaniladi?	eof( )	close()	false	true
+Maxsus tur bo’lib, o’zida maydon, usullar va hossalarni mujassamlashtiruvchi tushuncha nima?	sinf (klass)	massiv	o’zgaruvchi	konstruktor
+Murakkab struktura bo’lib, ma’lumotlar ta’riflaridan tashqari, protsedura va funksiyalar ta’riflarini o’z ichiga oluvchi tushuncha nima?	sinf (klass)	massiv	o’zgaruvchi	konstruktor
+Ma’lumotlar strukturasining kengaytirilgan kontseptsiyasi bo’lib, faqatgina ma’lumotlarnigina emas balki ma’lumotlarga qo’shib funksiyalar bilan ham ishlash imkonini beruvchi tushuncha nima?	sinf (klass)	massiv	o’zgaruvchi	konstruktor
+Klass (sinf) ning instantatsiyasi (bosqichi, hosilasi) ga nima deyiladi?	ob’ekt	sinf (klass)	o’zgaruvchi	konstruktor
+O’zgaruvchilarga nisbatan klass (sinf) nima sifatida qaraladi?	ma’lumotlar turi	o’zgaruvchi	konstruktor	sinf (klass)
+O’zgaruvchilarga nisbatan klass ob’ekti nima sifatida qaraladi?	o’zgaruvchi	ma’lumotlar turi	konstruktor	sinf (klass)
+Quyidagi struktura nimani e’lon qilish uchun ishlatiladi? class klass_nomi { funktsiya va o’zgaruvchilar };	sinf (klass)	shablon	konstruktor	do'st funksiya
+"Quyidagi dasturda klass (sinf)ning ob’ektini ko’rsating:  
+class Fakultet {
+    public: 
+    string nomi;    };
+int main( ){
+Fakultet kif;
+kif.nomi= “AT servis”;
+cout<<kif.nomi; } "	kif	nomi	mavjud emas	AT servis
+"Quyidagi dasturda klass (sinf)ning o’zgaruvchisini ko’rsating:  
+class Fakultet {
+    public:
+    string nomi;    };
+int main( ){
+Fakultet kif;
+kif.nomi= “AT servis”;
+cout<<kif.nomi; }"	nomi	kif	mavjud emas	AT servis
+"Quyidagi dasturda klass (sinf)ning funksiyasini ko’rsating: 
+class Fakultet {
+    public: string nomi; };
+int main( ){
+Fakultet kif;
+kif.nomi= “AT servis”;
+cout<<kif.nomi; }"	mavjud emas	nomi	kif	AT servis
+"Quyidagi dasturda klass (sinf) yaratishda qanday belgi tushib qolgan? 
+class Fakultet {
+    public:
+    string nomi;    } 
+int main( ){
+Fakultet kif;
+kif.nomi= “AT servis”;
+cout<<kif.nomi; }"	;	:	::	{}
+"Quyidagi dastur klass (sinf)ida ""name"" nima vazifani bajaradi?   
+class Person { 
+public: string name;  int age;         
+void print( ) {
+cout << ""Ismi : "" << name << endl; 
+cout << ""Yoshi : "" << age << endl; } };"	o’zgaruvchi	funksiya	konstruktor	destruktor
+"Quyidagi dastur klass (sinf)ida ""age"" nima vazifani bajaradi? 
+class Person {  
+public: string name;  int age;           
+void print( ) {
+cout << ""Ismi : "" << name << endl; 
+cout << ""Yoshi : "" << age << endl; } }; "	o’zgaruvchi  	funksiya	konstruktor	destruktor
+"Quyidagi dastur klass (sinf)ida print nima vazifani bajaradi?   
+class person {  
+public: string name;  int age;           
+void print( ){
+cout << ""Ismi : "" << name << endl;
+cout << ""Yoshi : "" << age << endl; } }; "	klass funksiyasi	o’zgaruvchi  	konstruktor	destruktor
+"Quyidagi dastur klass (sinf)ining funksiyasi tipini aniqlang? 
+class person {  
+public :  string name;   int age;     
+void print( ) {
+cout << ""Ismi : "" << name << endl;
+cout << ""Yoshi : "" << age << endl; } };"	void	int	class	string
+Klass (sinf) komponentalariga murojaat huquqi nima yordamida boshqariladi?  	"murojaat
+spetsifikatorlari"	funksiya	konstruktor va destruktor	obyekt
+Klass (sinf) komponentalariga murojaat huquqi spetsifikatorlari nechi xil bo’ladi?  	3	2	4	5
+Klass (sinf)da himoyalangan o’zgaruvchilar yaratishda qaysi murojaat huquqi spetsifikatoridan foydalaniladi? 	Protected	Private	Public	int
+Klass (sinf)da xususiy o’zgaruvchilar yaratishda qaysi murojaat huquqi spetsifikatoridan foydalaniladi? 	Private	Protected	Public	Spetsifikator kerakmas
+Klass (sinf)da dasturning barcha qismida foydalanish mumkin bo’lgan o’zgaruvchilar yaratishda qaysi murojaat huquqi spetsifikatoridan foydalaniladi? 	Public	Private	Protected	Spetsifikator kerakmas
+Sinflar ierarxiyasi (oilasi) qurilganda qaysi murojaat huquqi spetsifikatoridan foydalaniladi? 	Protected	Public	Private	Spetsifikator kerakmas
+Oddiy holda protected spetsifikatori nimaga ekvivalent hisoblanadi?  	Private	Public	Konstruktor	Destruktor
+Agar sinf "class" xizmatchi so'zi orqali ta'riflangan bo'lsa uning hamma komponentalari qanday bo'ladi? 	Private	Protected	Public	Template
+Qaysi murojaat huquqi spetsifikatoridan ob’yekt ko’rinadigan joyning barchasida klass a’zolarini ishlatish mumkin? 	Public	Private	Protected	Template
+Qaysi murojaat huquqi spetsifikatoridan klass a’zolarini boshqa shu klassning a’zolari yoki do’st klasslarida ishlatish mumkin? 	Private	Public	Protected	Template
+Qaysi murojaat huquqi spetsifikatoridan klass a’zolarini nafaqat shu klassning a’zolari yoki do’st klasslarida balki ushbu klass orqali hosil qilingan klass a’zolarini ishlatish mumkin?  	Protected	Private	Public	Typename
+Klass (sinf) a’zolarini e’lon qilishda hech qanday murojaat huquqi spetsifikatoridan foydalanilmagan bo’lsa ular (a’zolar) qaysi spetsifikatorda e’lon qilingan sanaladi? 	Private	Public	Protected	void
+"Quyidagi dastur klass (sinfi) da ""a"" o’zgaruvchisi qaysi spetsifikatorda e’lon qilingan?   
+class person {
+private:  
+string name;   int age; 
+public:  
+void set(string a, int b){
+  name = a;  age = b; }
+void print( ) {
+cout << ""Исми : "" << name << endl;
+cout << ""Ёши : "" << age << endl;} }; "	Public	Private	Protected	string
+"Quyidagi dastur klass (sinfi) da ""age"" o’zgaruvchisi qaysi spetsifikatorda e’lon qilingan?   
+class person {
+private:  
+string name;   int age; 
+public:  
+void set(string a, int b){
+  name = a;  age = b; }
+void print( ) {
+cout << ""Ismi : "" << name << endl;
+cout << ""Yoshi : "" << age << endl; } };"	Private	Public	Protected	int
+"Quyidagi dastur klass (sinfi) da ""b"" o’zgaruvchisi qaysi spetsifikatorda e’lon qilingan?   
+class person { 
+private:  
+string name;   int age; 
+public:  
+void set(string a, int b){
+  name = a;  age = b; }
+void print( ) {
+cout << ""Ismi : "" << name << endl;
+cout << ""Yoshi : "" << age << endl; } };"	Public	Private	Protected	int
+"Quyidagi dastur klass (sinfi) da ""set"" funksiyasi qaysi spetsifikatorda e’lon qilingan?   
+class person {
+private:  
+string name;   int age; 
+public:  
+void set(string a, int b){
+  name = a;  age = b; }
+void print( ) {
+cout << ""Ismi : "" << name << endl;
+cout << ""Yoshi : "" << age << endl; } };    "	Public	Private	Protected	void
+"Quyidagi dastur klass (sinfi) da Value o’zgaruvchisi qaysi spetsifikatorda e’lon qilingan? 
+class Func { float Value;
+  void F(int x, float a, float b, float s){
+  a=cos(x);  b=sqrt(b*x); s=sin(-x);
+  Value=a*x*x+b*x+s;  } };       "	Private	Public	Protected	Typename
+Klass (sinf) o’zgaruvchilarini initsializatsiya qilish uchun mo’ljallangan maxsus funksiya nima deyiladi? 	Konstruktor	Destruktor	void	main
+Klass (sinf) konstruktori qanday ma’lumot turini qaytaradi? 	Hech qanday	int	void	return
+Klass (sinf) konstruktoriga qanday nom berish mumkin? 	Klass (sinf) nomini	Klass (sinf) tipini	Ixtiyoriy	Nom berilmaydi
+Klass (sinf) ob’ekti yo’q qilinayotgan vaqtda avtomatik tarzda nima chaqiriladi? 	destruktor	konstruktor	do'st funksiya	obyekt
+Destruktorni qaysi operator orqali chaqirish mumkin? 	delete	close	destroy	erase
+Destruktorni chaqirishda funksiya oldiga qanday simvol qo’yiladi? 	~	->	::	>>
+Dasturlash tilning mexanizmi bo’lib, dasturdagi (klasslarda) bir kompanentni boshqa kompanentdan cheklash imkonini beruvchi tushuncha nima? 	Inkapsulyatsiya	Polimorfizm	Merosxo'rlik	Shablon
+Klass (sinf) larda bir xil nomli funksiyalarni bir necha bor yaratish nima deyladi?	Funksiyani qayta yuklanishi	Shablon	Rekursiya	Merosxo'rlik
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class Yuza{float a; float b; public: 
+int Y(int x){ a=x; return a*a;}
+float Y(float x, float y){ a=x; b=y; return a*b;}};
+int main (){
+Yuza T; cout<<T.Y(5,2)<<endl; return 0;}"	10	25	4	2,5
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class Yuza{float a; float b; public: 
+int Y(int x){ a=x; return a*a;}
+float Y(float x, float y){ a=x; b=y; return a*b;}};
+int main (){
+Yuza T;  cout<<T.Y(5.2)<<endl; return 0;}"	25	10	4	2,5
+"Dastur natijasini aniqlang: 
+#include <iostream>
+using namespace std;
+class Yuza{float a; float b;  public: 
+int Y(int x){ a=x; return a*a;}
+          float Y(float x, float y){ a=x; b=y; return a*b;}};
+int main (){
+Yuza T; cout<<T.Y(1.2,2)<<endl; return 0;} "	2.4	4	3	5
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class Yuza{float a; float b; public: 
+int Y(int x){a=x; return a*a;}
+float Y(float x, float y){a=x; b=y; return a*b;}};
+int main (){
+Yuza T; cout<<T.Y(1,2.2)<<endl; return 0;} "	2.2	1,44	3,2	4
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class calc{float a,b; public:
+double cl(double x, double y){a=x; b=y; cout<<a+b<<endl;}
+int cl(int i, int j){a=i; b=j; cout<<a*b<<endl;} }; 
+int main ( ) {
+calc T;  T.cl(3, 2); return 0; } "	6	5	9	4
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class calc{float a,b; public:
+double cl(double x, double y){a=x; b=y; cout<<a+b<<endl;}
+int cl(int i, int j){a=i; b=j; cout<<a*b<<endl;} }; 
+int main ( ) {
+calc T;   T.cl( 3. , 2. );   return 0; } "	5	6	9	2
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class calc{float a,b; public:
+double cl(double x, double y){a=x; b=y; cout<<a+b<<endl;}
+int cl(int i, int j){a=i; b=j; cout<<a*b<<endl;} }; 
+int main () {
+calc T;  T.cl(6.28 ,  2. ); return 0; } "	8,28	6,28	4,28	3,14
+"Dastur natijasini aniqlang: 
+#include <iostream>
+using namespace std;
+class calc{float a,b; public:
+double cl(double x, double y){a=x; b=y; cout<<a+b<<endl;}
+int cl(int i, int j){a=i; b=j; cout<<a*b<<endl;} }; 
+int main () {
+calc T;  T.cl(6,2); return 0; } "	12	36	4	8
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class calc{float a,b; public:
+double cl(double x){a=x; cout<<a+a<<endl;}
+int cl(int i, int j){a=i; b=j; cout<<a-b<<endl;} }; 
+int main () {
+calc T;  T.cl(6,2); return 0; } "	4	12.4	8	36
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class calc{float a,b; public:
+double cl(double x){a=x; cout<<a+a<<endl;}
+int cl(int i, int j){a=i; b=j; cout<<a-b<<endl;} }; 
+int main () {
+calc T;  T.cl(6.2);  return 0; } "	12.4	4	8	6
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class calc{float a,b; public:
+double cl(double x){a=x; cout<<a+a<<endl;}
+int cl(int i, int j){a=i; b=j; cout<<a-b<<endl;} }; 
+int main () {
+calc T;   T.cl(4,3);  return 0; }  "	1	7	8	12
+"Dastur natijasini aniqlang: 
+ #include <iostream>
+using namespace std;
+class calc{float a,b; public:
+double cl(double x){a=x; cout<<a+a<<endl;}
+int cl(int i, int j){a=i; b=j; cout<<a-b<<endl;} }; 
+int main () {
+calc T; T.cl(5.1,3.2); return 0; } "	2	8,3	1,9	6,4
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class Kattasi{ float a,b,c; public:
+int max( int x1, int y1 ){a=x1; b=y1; 
+return a<b?a:(b<c?b:c); }
+double max(double x2, double y2, double z2){
+a=x2; b=y2; c=z2;
+return a>b?a:(b>c?b:c);} }; 
+int main (){
+Kattasi T;
+cout<<T.max(5, 7); return 0; } "	5	7	12	35
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class Kattasi{ float a,b,c; public:
+int max( int x1, int y1 ){a=x1; b=y1; 
+return a<b?a:(b<c?b:c); }
+double max(double x2, double y2, double z2){
+a=x2; b=y2; c=z2;
+return a>b?a:(b>c?b:c);} }; 
+int main (){
+Kattasi T;
+cout<<T.max(2.1,6); return 0; }  "	2	6	2,1	8,1
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class Kattasi{ float a,b,c; public:
+int max( int x1, int y1 ){a=x1; b=y1; 
+return a<b?a:b; }
+float max(float x2, float y2, float z2){
+a=x2; b=y2; c=z2;
+return a>b?a:(b>c?b:c);} }; 
+int main (){
+Kattasi T;
+cout<<T.max(5,7,4); return 0; } "	7	4	5	9
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+class Kattasi{ float a,b,c; public:
+int max( int x1, int y1 ){a=x1; b=y1; 
+return a<b?a:b; }
+float max(float x2, float y2, float z2){
+a=x2; b=y2; c=z2;
+return a>b?a:(b>c?b:c);} }; 
+int main (){
+Kattasi T;
+cout<<T.max(1.9,2); return 0; } "	1	2	1,9	3,9
+Bog'langan funksiyalar yoki sinflar oilasini tuzishda nimadan foydalaniladi? 	shablon	rekursia	class	qayta yuklash
+C++ dasturlash tilida parametrlangan turlar deb nimaga nisbatan aytiladi? 	shablon	rekursia	class	qayta yuklash
+Template xizmatchi so’zi nimani e’lon qilishda ishlatiladi? 	shablon	rekursia	class	qayta yuklash
+Funksiya shablonini yaratishda formal tiplarning har birining oldida qanday xizmatchi so'zi qo'yilishi kerak? 	typename	template	void	T
+" Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+template < typename T >
+T katta( T a, T b ){
+if (a>b) return a;
+else return b;}
+int main ( ) {
+cout<<katta('a', 'b'); 
+return 0;} "	b	a	 'a', 'b' 	Xatolik sodir bo'ladi
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+template <class T>
+T add(T a, T b){
+return a; b; }
+int main( ){
+cout<<add <int>(21,56) <<endl;
+return 0;} "	21	56	77	21, 56
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+template < typename T >
+T katta( T a, T b ){
+if (a>b) return a;
+else return b;}
+int main ( ) {
+cout<<katta(string(""as""), string(""ac""));
+return 0; } "	as	ac	a	Xatolik sodir bo'ladi
+"Dastur natijasini aniqlang: 
+#include <iostream>
+using namespace std;
+template <class T>
+T add(T a, T b){
+return a+b; }
+int main( ){
+cout<<add <float>(2.1,3.2) <<endl;
+return 0;} "	5.3	5	2.1	3.2
+"Dastur natijasini aniqlang: 
+#include <iostream>
+using namespace std;
+template <class T> 
+class my{T a, b;
+public:
+my(T x, T y){
+a = x; b = y;}
+T add(){return a + b;} };
+int main(){
+my <string> d(""ab"", ""cd"");
+cout << d.add();
+return 0;} "	abcd	ab	cd	cdab
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+template <class T>
+T M (T a, T b){
+return a>b?a:b;}
+int main () {
+cout<<M <int>(4+3,6-1);
+return 0;} "	7	6	4	5
+"Dastur natijasini aniqlang:
+#include <iostream>
+using namespace std;
+template <typename T> 
+T a1(T a, T b){return a + b;}
+template <class T> 
+T a2(T a, T b){return a>b?a:b;}
+int main(){
+cout<<a1(8,4)+a2<double>(3.3,7.); 
+return 0;} "	19	12	8	7
+"Dastur natijasini aniqlang:  
+#include <iostream>
+using namespace std;
+template <typename T> 
+T a1(T a, T b){return a + b;}
+template <class T> 
+T a2(T a, T b){return a>b?a:b;}
+int main(){
+cout<<a1(34,64); a2<double>(3.3,7.2); 
+return 0;} "	98	64	34	7,2
+"Dastur natijasini aniqlang:  
+#include <iostream>
+using namespace std;
+template <typename T> 
+T a1(T a, T b){return a + b;}
+template <class T> 
+T a2(T a, T b){return a>b?a:b;}
+int main(){
+cout<<a1(15,17)-a2<double>(3,7); 
+return 0;} "	25	17	15	21
+TCheckBox komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+TRadioButton komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+TListBox komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+TComboBox komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+TScrollBar komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+TGroupBox komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+TActionList komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+Frame komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+Button komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+Edit komponentasi qaysi komponentalar palitrasida joylashgan	Standart	Additional	Win32	System
+TStringGrid komponentasi qaysi komponentalar palitrasida joylashgan	Additional	Standart	Win32	System
+TDrawGrid komponentasi qaysi komponentalar palitrasida joylashgan	Additional	Standart	Win32	System
+TImage komponentasi qaysi komponentalar palitrasida joylashgan	Additional	Standart	Win32	System
+TShape komponentasi qaysi komponentalar palitrasida joylashgan	Additional	Standart	Win32	System
+Buttoning OnClick xodisasi qachon ishga tushadi.	tugma bosilganda 	tugmani ustiga sichqonch borganda	tugma ikki marta bosilganda	unday hodisa mavjud emas.
+Ilovaga yangi forma qanday qoshiladi	File->New->Form	Edit->New->Form	File->Open->Form	File->New->Frame
+Bir formadan ikkinchisiga o'tish uchun qanday metodan foydalanamiz	Show, ShowModel	Model	ShowOne, ShowAll	to'g'ri javob yo'q
+Show, ShowModel metodlari bajarildanda formaning qaysi hodisasi ishlaydi. 	OnShow	OnClose	OnDbiClick	OnCreate
+Formani qanday metod orqali yopish mumkin	Close	Show	ShwModel	ShowOne
+TTimer qaysi komponentalar palitrasida joylashgan	System	Standart	Win32	win31
+
+    </pre>
+</body>
+</html>
